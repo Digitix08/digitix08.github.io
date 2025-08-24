@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link id="dark" rel="stylesheet" href="css/style.css">
+		<title>index</title>
+		<script src="dark.js"></script>
+		<script language="javascript" type="text/javascript">
+			var darkmode = getTheme()
+			if (darkmode == "yes"){
+			  	document.getElementById("dark").href="css/dark.css";
+				}
+			function FP_getObjectByID(id,o) {//v1.0
+ 				var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ 				else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ 				if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ 				for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ 				f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ 				for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ 				return null;
+			}
+			function outliner() {
+				oMe = window.event.srcElement
+				//get child element
+				var child = document.all[event.srcElement.getAttribute("child",false)];
+				//if child element exists, expand or collapse it.
+				if (null != child)
+					child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+			}
+			function changevalue(val2, val1){
+				if(document.getElementById("Changeval").value == val2)
+document.getElementById("Changeval").value=val1;
+else document.getElementById("Changeval").value=val2;
+			}
+		</script>	
+		
+		<style type="text/css">
+		.collapsed{
+			DISPLAY: none
+		}
+		</style>
+					
+	</head>
+	<body onclick="outliner();">
+		<table style="height:100%; width: 100%">
+			<tr height="40">
+				<td style="width: 18%"><a href="javascript:history.back()">back</a>
+					<a href="javascript:history.reload()">reload</a>
+					<a href="javascript:history.forward()">forward</a></td>
+				<td style="width: 75px">
+					<input id="Changeval" type="button" child="issue0" value="search &darr;" onclick="changevalue('collapse &uarr;','search &darr;');" style="width: 71px">
+				<td style="width: 25%">
+					<input id="Text1" type="text" name="Text1" style="width: 250px" placeholder="url...">
+					<input type="button" onclick="navi();" value="Go to">
+				</td>
+				<td style="width: 14%">
+					<input name="Checkbox1" id="Checkbox1" type="checkbox">.html
+					<input name="Checkbox2" id="Checkbox2" type="checkbox">.htm
+				</td>
+				<td style="color:white; background-color:green; width: 25%;">Outer link: 
+					<input name="Checkbox3" id="Checkbox3" type="checkbox">http:// 
+					<input name="Checkbox4" id="Checkbox4" type="checkbox">https://
+				</td>
+				<td style="background-color:red"><label style="color:white" id="Label1"></label></td>
+				<td style="width: 20">
+					<a href="#" onclick="exit();">exit</a></td>
+			</tr>
+			<tr  class="collapsed" style="background-color:rgba(0, 0, 0, 0)" id="issue0" height="40">
+				<td>Google</td>
+				<td></td>
+				<td>
+				<input id="Text2" type="text" name="Text2" style="width: 235px" placeholder="search...">
+				<input type="button" onclick="search();" style="width: 62px" value="Search"></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="7"><iframe width="100%" height="100%" id="I1" name="I1" src="test.html">Your browser does not support inline frames or is currently configured not to display inline frames.
+				</iframe></td>
+			</tr>
+		</table>
+		<script>
+		function navi() {
+			var url = document.getElementById("Text1").value;
+			if (document.getElementById('Checkbox1').checked&&document.getElementById('Checkbox2').checked)
+				{document.getElementById("Label1").innerText="Please deselect html or htm";return;}
+			if (document.getElementById('Checkbox3').checked&&document.getElementById('Checkbox4').checked)
+				{document.getElementById("Label1").innerText="Please deselect http or https";return;}
+			if (document.getElementById('Checkbox1').checked){
+				document.getElementById("I1").src=url+".html";document.getElementById("Label1").innerText=" ";}
+			if (document.getElementById('Checkbox2').checked){
+				document.getElementById("I1").src=url+".htm";document.getElementById("Label1").innerText=" ";}
+			if (document.getElementById('Checkbox3').checked){
+				document.getElementById("I1").src="http://"+url;document.getElementById("Label1").innerText=" ";}
+			if (document.getElementById('Checkbox4').checked){
+				document.getElementById("I1").src="https://"+url;document.getElementById("Label1").innerText=" ";}
+		}
+		function search() {
+			var term = document.getElementById("Text2").value;
+			if (document.getElementById('Checkbox3').checked&&document.getElementById('Checkbox4').checked)
+				{document.getElementById("Label1").innerText="Please deselect http or https";return;}
+			if (document.getElementById('Checkbox3').checked){
+				document.getElementById("I1").src="http://"+"www.google.com/search?igu=1&q="+term;
+				document.getElementById("Label1").innerText=" ";}
+			if (document.getElementById('Checkbox4').checked){
+				document.getElementById("I1").src="https://"+"www.google.com/search?igu=1&q="+term;
+				document.getElementById("Label1").innerText=" ";}
+
+		}
+		function exit() {
+			var exit = document.getElementById("I1").src;
+			open (exit, name="_self");
+			return;
+		}
+		</script>
+</body>
+</html>

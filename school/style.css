@@ -1,0 +1,21 @@
+﻿html, body {width: 100%}
+body {background: #081732 url("images/peterthal.jpg") 50% 0 repeat-y}
+    body {color: #fff; font-family: arialNarrow, arial, helvetica, tahoma, verdana; font-size: 16px; cursor: default}
+A:link
+{
+	COLOR: #cc6633;
+	TEXT-DECORATION: underline
+}
+A:visited
+{
+	COLOR: #cc6633;
+}
+A:active
+{
+	COLOR: #cc6633;
+}
+A:hover
+{
+	COLOR: #cc3300;
+	TEXT-DECORATION: underline
+}

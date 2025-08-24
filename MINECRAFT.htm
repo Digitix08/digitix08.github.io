@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "tabbed_desktop.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link id="dark" href="css/style.css" rel="stylesheet" />
+<!-- #BeginEditable "docprops" -->
+<title>Minecraft</title>
+<script src="dark.js"></script><script src="anchor.js"></script>
+<script language="javascript" type="text/javascript">
+var darkmode = getTheme()
+if (darkmode == "yes"){
+	document.getElementById("dark").href="css/dark.css";
+}
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	document.getElementById("dark").href="/mobile/css/style.css";
+	if (darkmode == "yes"){
+		document.getElementById("dark").href="/mobile/css/dark.css";
+		}
+	}
+var login = 0;
+function ValidatePassword() {
+	if (login==1){
+		console.log("logged out");
+		document.getElementById("login-status").innerHTML= "to see password";
+		document.getElementById("login").innerHTML = "Log in";
+		login = 0;
+		return true;
+	}
+	var user = prompt("Who are you");
+	var password = prompt("Please enter password to proceed", "");
+	if (login==0 && user == "gabi"&&password == "123456"){
+		document.getElementById("login-status").innerHTML= "1234567890";
+		document.getElementById("login").innerHTML = "Log out";
+		login = 1;console.log("Hello, "+user);
+		return true;
+	}
+	console.log("login fail");
+	document.getElementById("login-status").innerHTML= "login failure, user not in login database";
+	login = 0;
+	return false;
+}
+</script>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "onload" -->
+<body>
+
+<!-- #EndEditable -->
+<table align="center" id="body" class="body" style="width: 100%; max-width: 1000px">
+	<tr>
+		<td style="height: 46px" colspan="2">
+		<h1 class="menu" id="title">Digitix08's Testsite</h1>
+		</td>
+	</tr>
+	<!-- #BeginEditable "menu" -->
+		<tr class="ctrltable menu"><td class="menu" style="width:100px">
+			<a class="menu" id="home" href="/index.htm">Home</a>
+			</td><td class="menu" style="width:100%">
+			<a class="menu" href="index-old.htm">Search</a>
+			<a class="menu" href="account/login.html">Login</a>
+			<a class="menu" href="games/index.html">Games</a>
+			<a class="menucurrent">Minecraft srvrs</a>
+			<a class="menu" href="photo_gallery.htm">Photo Gallery</a>
+		</td></tr>
+	<!-- #EndEditable -->
+	<!-- #BeginEditable "body" -->
+		<tr>
+				<td colspan="2"><h1 id="darkH1">Minecraft</h1>
+<h2>Servers</h2>
+<h3>1:gabiblog (nebunii de pe mc)</h3>
+	<p>Minecraft bedrock v<span>1.20.80.01</span></p>
+	<p><a href="minecraft://?addExternalServer=Iamdumb20.aternos.me|Iamdumb20.aternos.me:56560">
+	Add to MCPE</a></p>
+	<p>Server hostat pe <a href="http://aternos.org/server">aternos</a></p>
+<table style="width: 350px">
+	<tr>
+		<td width="40px">ip</td>
+		<td style="border-style: solid; border-width: 2px">iamdumb20<span class="auto-style2">.aternos.me</span></td>
+	</tr>
+	<tr>
+		<td>port</td>
+		<td style="border-style: solid; border-width: 2px">56560</td>
+	</tr>
+</table>
+<h3>2:server2</h3>
+	<p>Server hostat pe <a href="http://aternos.org/server">aternos</a></p>
+	<p>Minecraft java v<span>1.20.4</span></p>
+<table style="width: 350px">
+	<tr>
+		<td width="40px">ip</td>
+		<td style="border-style: solid; border-width: 2px">iamdumb20uVvn<span class="auto-style2">.aternos.me:18052</span></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	<!-- #EndEditable -->
+</table>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

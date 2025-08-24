@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "tabbed_desktop.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link id="dark" href="css/style.css" rel="stylesheet" />
+<!-- #BeginEditable "docprops" -->
+<title>Settings</title>
+<script type="text/javascript" src="dark.js"></script><script type="text/javascript" src="anchor.js"></script>
+<script language="javascript" type="text/javascript">
+var darkmode = getTheme();
+if (darkmode == "yes"){
+	document.getElementById("dark").href="css/dark.css";
+}
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	document.getElementById("dark").href="/mobile/css/style.css";
+	if (darkmode == "yes"){
+		document.getElementById("dark").href="/mobile/css/dark.css";
+		}
+	}
+function setval(date){
+	var darksel = document.getElementsByName("Theme");
+	var autosel = document.getElementsByName("auto");
+	for (var i = 0; i < darksel.length; i++) {
+		//console.log("4");
+		if (darksel[i].checked){
+			var darkmode = darksel[i].value;
+			console.log(darkmode);
+			if (darkmode == "no" || darkmode == "yes"){
+				setCookie("dark", darkmode, date);
+			}
+			else if (darkmode == "auto"){
+				for (var j = 0; j < autosel.length; j++)
+					if (autosel[j].checked){
+						var autoprev = autosel[j].value;
+						if (autoprev == "dark")setCookie("dark", "auto"+autoprev, date);
+						if (autoprev == "black")setCookie("dark", "auto"+autoprev, date);
+					}
+			}
+		}
+	}
+}
+function makeCookie() {
+	var datesel = document.getElementsByName("Exp");
+	var accept = getCookie("prompt");
+	if(accept == "accept"){
+		var date = new Date();
+		console.log(date);
+		for (var i = 0; i < datesel.length; i++) {
+			if (datesel[i].checked){
+			//console.log("2");
+				var expdate = datesel[i].value;
+                if(expdate == "default"){
+					//console.log("3");
+					setval(365);
+                }
+                else if (expdate == "date"){
+					var input = document.getElementById("Date").value
+					var dateEntered = new Date(input);
+					console.log(input); //e.g. 2024-11-13
+					console.log(dateEntered); //e.g. Fri Nov 13 2024 00:00:00 GMT+0000 (GMT Standard Time)
+					//console.log("3");
+					setval("actualdate+"+dateEntered);
+                }
+                else if (expdate == "altdate"){
+					var value = document.getElementById("Select1").value
+					console.log(value);
+						if (value == "day"){
+							//console.log("3");
+							setval(1);
+						}
+						else if (value == "week"){
+							//console.log("3");
+							setval(7);
+						}
+						else if (value == "month"){
+							//console.log("3");
+							setval(30);
+						}
+						else if (value == "year"){
+							//console.log("3");
+							setval(365);
+						}
+						else if (value == "9999"){
+							//console.log("3");
+							var dexp = new Date('31 dec 9999');
+							console.log(dexp);
+							setval("actualdate"+dexp);
+						}
+                }
+			}
+		}
+		location.reload();
+	}
+	else checkPrompt();
+}
+function prevtheme(){
+	var darkview = document.getElementsByName("Theme");
+	var autosel = document.getElementsByName("auto");
+	for (var i = 0; i < darkview.length; i++) {
+		if (darkview[i].checked){
+			var darkprev = darkview[i].value;
+			console.log(darkprev);
+			if (darkprev == "no") document.getElementById("dark").href="css/style.css";
+			else if (darkprev == "yes"){
+				document.getElementById("dark").href="css/dark.css";
+			}
+			else if (darkprev == "oled"){
+				alert("oled dark is not available");
+				document.getElementById("dark").href="css/black.css";
+			}
+			else if (darkprev == "auto"){
+				var mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
+				var isDarkMode = mediaQueryObj.matches;
+				if (isDarkMode){
+					for (var j = 0; j < autosel.length; j++) {
+					if (autosel[j].checked){
+						var autoprev = autosel[j].value;
+					   	alert(isDarkMode);
+						   if(autoprev == "oled"){
+						   		document.getElementById("dark").href="css/black.css";
+						   		alert("oled dark is not available");
+					   		}
+					   		else document.getElementById("dark").href="css/dark.css";
+						}
+					}
+ 				}
+			}
+		}
+	}
+}
+function eraseCookie(name){
+	setCookie(name, " ", "actualdate+"+"Thu Jan 01 1970 00:00:00 UTC");
+	window.location.reload();
+}
+function getLogStatus(){
+	var user = getCookie("user");var login = getCookie("login");if(user != null&&user != ""&&login==1){document.
+	getElementById("logstatus").innerHTML="Logged in as "+user;document.getElementById("LogOut").style=""}
+}
+</script>
+<style type="text/css">
+
+
+
+
+
+.auto-style1 {
+	text-align: right;
+}
+.auto-style2 {
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+.auto-style3 {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.auto-style4 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style5 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style6 {
+	text-align: right;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+</style>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "onload" -->
+<body>
+
+<!-- #EndEditable -->
+<table align="center" id="body" class="body" style="width: 100%; max-width: 1000px">
+	<tr>
+		<td style="height: 46px" colspan="2">
+		<h1 class="menu" id="title">Digitix08's Testsite</h1>
+		</td>
+	</tr>
+	<!-- #BeginEditable "menu" -->
+	<tr class="ctrltable menu"><td class="menu" style="width:100px">
+		<a class="menu" id="home" href="../index.htm">Home</a>
+		</td><td class="menu" style="width:100%">
+		<a class="menu" href="index-old.htm">Search</a>
+		<a class="menu" href="account/login.html">Login</a>
+		<a class="menu" href="games/index.html">Games</a>
+		<a class="menu" href="MINECRAFT.htm">Minecraft srvrs</a>
+		<a class="menucurrent">Settings</a></td>
+	</tr>
+	<!-- #EndEditable -->
+	<!-- #BeginEditable "body" -->
+	<tr>
+		<td colspan="2">
+		<h1 id="darkH1">Settings</h1>
+		<h2>Theme &amp; Aspect</h2>
+		<h3>Theme setting</h3>
+		<div style="height:10px"></div>
+		<table class="auto-style2" style="width: 100%; font-size: 80%">
+			<tr class="header">
+				<td colspan="2" style="border-top-color: #C0C0C0; border-top-width: 2px">Theme mode</td>
+				<td class="auto-style3" style="height: 22px; border-right-color: #A0A0A0; border-right-width: 2px; border-top-color: #C0C0C0; border-top-width: 2px;">
+				Time span</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<input checked="checked" name="Theme" type="radio" value="no" />Light<br />
+				<input name="Theme" type="radio" value="yes" />Dark<br />
+				<input name="Theme" type="radio" value="oled" />Oled black<br />
+				</td>
+				<td class="auto-style3" rowspan="3" style="border-right-color: #A0A0A0; border-right-width: 2px">
+				<input name="Exp" type="radio" value="date" /><input id="Date" type="date" /><br />
+				<input name="Exp" type="radio" value="altdate" /><select id="Select1">
+				<option selected="selected" value="day">In 1 day</option>
+				<option value="week">In 1 week</option>
+				<option value="month">In 1 month</option>
+				<option value="year">In 1 year</option>
+				<option value="9999">Until 31dec9999</option>
+				</select><br />
+				<input checked="checked" name="Exp" type="radio" value="default" /> Default<br />
+				<input name="Exp" type="radio" value="none" /> None<span style="font-size: 80%"><span style="font-size: 80%"><br />
+				<input name="erase" onclick="eraseCookie('dark');" type="button" value="Erase Cookie" /></span></span></td>
+			</tr>
+			<tr>
+				<td class="auto-style3" style="width: 71px">
+				<input name="Theme" type="radio" value="auto" />Auto</td>
+				<td class="auto-style4">Auto mode</td>
+			</tr>
+			<tr>
+				<td class="auto-style3" style="width:110px">*Auto mode<br />
+				only works on<br />
+				some browsers!</td>
+				<td class="auto-style5">
+				<input checked="checked" name="auto" type="radio" value="dark" />Dark<br />
+				<input name="auto" type="radio" value="oled" />Oled </td>
+			</tr>
+			<tr class="issuehdr">
+				<td>&nbsp;</td>
+				<td class="auto-style6">&nbsp;</td>
+				<td class="auto-style1" style="border-right-color: #A0A0A0; border-right-width: 2px">
+				<input name="preview" onclick="prevtheme();" type="button" value="Preview" /><input name="set" onclick="makeCookie();" type="button" value="Apply" /></td>
+			</tr>
+		</table>
+		<h2>Login</h2>
+			<p><label id="logstatus">Not logged in. Go 
+			<a href="account/login.html?redir=../settings.html">here</a> to login</label></p>
+			<p id="LogOut" style="display:none">
+			<input name="LogOut" onclick="eraseCookie('login'); eraseCookie('user')" type="button" value="Logout" /></p>
+		<h2>Advanced</h2>
+			<h3>User data (cookies)</h3>
+			<p><input name="eraseAll" onclick="eraseCookie('dark'); eraseCookie('prompt'); eraseCookie('login'); eraseCookie('user')" type="button" value="Erase All Cookies" /> for this site&nbsp;</p>
+		<p></p>
+		</td>
+	</tr>
+	<!-- #EndEditable -->
+</table>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

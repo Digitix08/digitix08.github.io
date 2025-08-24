@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "tabbed_desktop.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link id="dark" href="css/style.css" rel="stylesheet" />
+<!-- #BeginEditable "docprops" -->
+<title>Jump to page</title>
+<script src="dark.js"></script><script src="anchor.js"></script>
+<script src="sitemap.js"></script>
+<script language="javascript" type="text/javascript">
+var darkmode = getTheme()
+if (darkmode == "yes"){
+	document.getElementById("dark").href="css/dark.css";
+}
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	document.getElementById("dark").href="/mobile/css/style.css";
+	if (darkmode == "yes"){
+		document.getElementById("dark").href="/mobile/css/dark.css";
+		}
+	}
+	function go(type){
+		if(type == "textbox")
+			{
+				var locat = window.location.pathname;
+				locat = locat.substring(0, locat.length-17);
+				locat += document.getElementById("text1").value;
+				window.location.href = locat;
+			}
+		else if(type == "dropdown")
+			{
+				var locat = window.location.pathname;
+				locat = locat.substring(0, locat.length-17);
+				var sel1 = document.getElementById("Select1");
+				if(sel1.value != "/")
+					locat += sel1.value;
+				locat += document.getElementById("Select2").value;
+				if(document.getElementById("sel3"))
+					locat += document.getElementById("sel3").value;
+				window.location.href = locat;
+
+				window.location.href = locat;
+			}
+	}
+	function dropdownchange(){
+		var sel1 = document.getElementById("Select1");
+		sel3remove();
+		if(sel1.value == "/")slash();
+		else if(sel1.value == "account/")account();
+		else if(sel1.value == "basic_view/")bview();
+		else if(sel1.value == "download/")download();
+		else if(sel1.value == "games/")games();
+		else if(sel1.value == "index-casete/")indexcasete();
+		else if(sel1.value == "mobile/")mobile();
+		else if(sel1.value == "school/")school();
+		else if(sel1.value == "shop/")shop();
+		else if(sel1.value == "weird-ram/")weirdram();
+		subfolder();
+	}
+</script>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "onload" -->
+<body onload="dropdownchange()">
+
+<!-- #EndEditable -->
+<table align="center" id="body" class="body" style="width: 100%; max-width: 1000px">
+	<tr>
+		<td style="height: 46px" colspan="2">
+		<h1 class="menu" id="title">Digitix08's Testsite</h1>
+		</td>
+	</tr>
+	<!-- #BeginEditable "menu" -->
+	<tr class="ctrltable menu"><td class="menu" style="width:100px">
+			<a class="menu" id="home" href="/index.htm">Home</a>
+			</td><td class="menu" style="width:100%">
+			<a class="menu" href="index-old.htm">Search</a>
+			<a class="menu" href="account/login.html">Login</a>
+			<a class="menu" href="games/index.html">Games</a>
+			<a class="menu" href="MINECRAFT.htm">Minecraft srvrs</a>
+			<a class="menucurrent">Jump to page</a>
+		</td></tr>
+	<!-- #EndEditable -->
+	<!-- #BeginEditable "body" -->
+		<tr>
+				<td colspan="2">
+				<h1 id="darkH1">Jump to page</h1>
+				<p>Select the page to go to...</p>
+				<p id="selectarea">
+				<select id="Select1" onchange="dropdownchange()" name="folderselect">
+				<option selected="selected" value="/">/</option>
+				<option value="account/">account/</option>
+				<option value="basic_view/">basic_view/</option>
+				<option value="download/">download/</option>
+				<option value="games/">games/</option>
+				<option value="index-casete/">index-casete/</option>
+				<option value="mobile/">mobile/</option>
+				<option value="school/">school/</option>
+				<option value="shop/">shop/</option>
+				<option value="weird-ram/">weird-ram/</option>
+				</select>
+				<select id="Select2" onchange="subfolder()">
+				<option></option>
+				</select> </p>
+				<p><input type="button" value="Go" onclick="go('dropdown')" /></p>
+				<p>Or simply type it here</p>
+				&nbsp;<input id="text1" type="text" />
+				<input type="button" value="Go" onclick="go('textbox')" /> </td>
+		</tr>
+	<!-- #EndEditable -->
+</table>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

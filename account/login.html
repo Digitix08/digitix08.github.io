@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../tabbed_desktop.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link id="dark" href="../css/style.css" rel="stylesheet" />
+<!-- #BeginEditable "docprops" -->
+<title>login</title>
+<script src="../dark.js"></script><script src="../anchor.js"></script>
+<script language="javascript" type="text/javascript">
+var darkmode = getCookie("dark"), redirURL;
+if (darkmode == "yes")document.getElementById("dark").href="../css/dark.css";
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	document.getElementById("dark").href="/mobile/css/style.css";
+	if (darkmode == "yes"){
+		document.getElementById("dark").href="/mobile/css/dark.css";
+		}
+	}
+if (window.location.href.indexOf("?") > -1){
+	var urlString = window.location.href
+	var paramString = urlString.split('?')[1];
+	var params_arr = paramString.split('&');
+	for (var i = 0; i < params_arr.length; i++) {
+		var pair = params_arr[i].split('=');
+		if (pair[0] == "redir")redirURL = pair[1];
+	}
+}
+
+var login = 0;
+function checklogin(){
+	var logstatus = getCookie("login");
+	if (logstatus == 1){
+		var user = getCookie("user");
+	  	login = 1;
+	  	document.getElementById("login-status").innerHTML = "logged in as "+user;
+	  	document.getElementById("logout").className = "expanded";
+		console.log("Hello, " + user);
+		if(typeof redirURL != "undefined")window.location.href = redirURL;
+	}
+}
+function ValidatePassword() {
+	if (login == 0){
+ 		var user = document.getElementById("user").value;
+		var password = document.getElementById("password").value;
+		if (user == "gabi"&&password == "123456") {
+			document.getElementById("login-status").innerHTML = "logged in as "+user;
+			setCookie("login", 1)
+			setCookie("user", user);
+			login = 1;console.log("Hello, " + user);
+			document.getElementById("logout").className = "expanded";
+			if(redirURL == null)window.location.href = "../index-casete/index.html"
+			else window.location.href = redirURL;
+			return true;
+		}
+		if(document.getElementById("user").value && document.getElementById("password").value){
+			console.log("login fail");
+			document.getElementById("login-status").innerHTML = "login failure, user not in login database";
+			login = 0;
+			window.location.href = "sorry.htm";
+			return false;
+		}
+	}
+}
+function LogOut() {
+	login = 0;
+	console.log("logged out");
+	document.getElementById("login-status").innerHTML = "not logged in";
+	document.getElementById("logout").className = "collapsed";
+	setCookie("login", 0);
+	setCookie("user", null)
+	login = 0;
+	return true;
+}
+</script>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "onload" -->
+<body onload="checklogin()">
+
+<!-- #EndEditable -->
+<table align="center" id="body" class="body" style="width: 100%; max-width: 1000px">
+	<tr>
+		<td style="height: 46px" colspan="2">
+		<h1 class="menu" id="title">Digitix08's Testsite</h1>
+		</td>
+	</tr>
+	<!-- #BeginEditable "menu" -->
+		<tr class="ctrltable"><td class="menu">
+			<a class="menu" id="home" href="../index.htm">Home</a>
+			</td><td class="menu" style="width:100%">
+			<a class="menu" href="../index-old.htm">Search</a>
+			<a class="menucurrent">Login</a>
+			<a class="menu" href="../games/index.html">Games</a>
+			<a class="menu" href="../MINECRAFT.htm">Minecraft srvrs</a>
+			<a class="menu" href="../photo_gallery.htm">Photo Gallery</a>
+		</td></tr>
+	<!-- #EndEditable -->
+	<!-- #BeginEditable "body" -->
+		<tr>
+				<td colspan="2"><div id="main-content">
+	<h1 id="darkH1">Login</h1>
+					<p>&nbsp;</p>
+</div>
+<form onsubmit="return false">
+	<table border="1" bordercolor="white" cellpadding="2" cellspacing="0" class="infotable" width="400px">
+		<tr class="row">
+			<td>User:</td>
+			<td><input id="user" autocomplete="username" required type="text" /> </td>
+		</tr>
+		<tr class="row">
+			<td>Password:</td>
+			<td>
+			<input id="password" name="password" autocomplete="current-password" required type="password" /></td>
+		</tr>
+		<tr class="row">
+			<td class="content"><input type="reset" value="Clear" /></td>
+			<td class="content">
+			<input type="submit" value="Log in" onclick="ValidatePassword();" />
+			<input class="collapsed" id="logout" type="button" value="Log out" onclick="LogOut();" /></td>
+		</tr>
+		<tr valign="top">
+			<td id="login-status" class="foot">Not logged in</td>
+			<td class="foot">&nbsp;</td>
+		</tr>
+	</table>
+</form>
+				&nbsp;</td>
+		</tr>
+	<!-- #EndEditable -->
+</table>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

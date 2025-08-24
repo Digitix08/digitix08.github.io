@@ -1,0 +1,62 @@
+<html>
+<head><title>toploga retllor de caculatore</title>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+
+
+
+
+
+<body style = "background-color:#990f0f ; font-family:Comic sans ms; font-size : 20;" onload="FP_preloadImgs(/*url*/'../images/buttons/back_cmp_aftrnoon000_back.gif',/*url*/'../images/buttons/back_cmp_aftrnoon000_back_p.gif',/*url*/'../images/buttons/home_cmp_aftrnoon000_hbtn_p_s.gif',/*url*/'../images/buttons/home_cmp_aftrnoon000_hbtn.gif')">
+
+<a href="horar%20gabi.html">
+<img border="0" id="img4" src="../images/buttons/back_cmp_aftrnoon000_back.gif" height="21" width="100" alt="Back" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'../images/buttons/back_cmp_aftrnoon000_back_p.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'../images/buttons/back_cmp_aftrnoon000_back.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'../images/buttons/back_cmp_aftrnoon000_back_p_s.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'../images/buttons/back_cmp_aftrnoon000_back_p.gif')"  ></a><a href="index.htm"><img border="0" id="img2" src="../images/buttons/home_cmp_aftrnoon000_hbtn.gif" height="20" width="141" alt="Pag superioara"   onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'../images/buttons/home_cmp_aftrnoon000_hbtn_p.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'../images/buttons/home_cmp_aftrnoon000_hbtn.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'../images/buttons/home_cmp_aftrnoon000_hbtn_p_s.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'../images/buttons/home_cmp_aftrnoon000_hbtn_p.gif')"></a><a href="c&#226;ni.html"><img border="0" id="img5" src="../images/buttons/next_cmp_aftrnoon000_next.gif" height="21" width="100" alt="Next" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'../images/buttons/next_cmp_aftrnoon000_next_p.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'../images/buttons/next_cmp_aftrnoon000_next.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'../images/buttons/next_cmp_aftrnoon000_next_p_s.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'../images/buttons/next_cmp_aftrnoon000_next_p.gif')"  ></a>
+&nbsp;<table style = "background-color:#99f0f0" border = 5 width = 80%>
+<tr><th style = "font-family:Algerian; " width = 70%> Tip re&#539;ea</th>
+	<th> Imagine </th>
+</tr>
+<tr><td style = "" height = 130>Ring/Inel<br>Intr-o topologie de tip inel, fiecare calculator este conectat la urmatorul, iar ultimul este conectat la primul.
+Topologia de tip inel este utilizata in retelele de mare performanta, retele care necesita ca banda sa fie rezervata pentru trafic sensibil la intarzierile de timp, cum sunt fisierele video si audio sau alte retele in care numarul de utilizatori care le acceseaza este foarte mare.
+
+ </td>
+	<td> <img alt="" src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2nj8kHoxEZoncwOBjK93JZHUUI1WLX1Eq7QiW4VhJUbZb9JOj4mJ6lwg-s-LWhrva8m4&usqp=CAU height=180 width=90%> </td>
+</tr>
+<tr><td> Magistrala/Bus<br>Tipul de topologie de re&#539;ea &#238;n care toate nodurile re&#539;elei sunt conectate la un mediu comun de transmisie care are exact dou&#259; termina&#539;ii (englez&#259;: endpoints), toate datele care sunt transmise &#238;ntre noduri &#238;n re&#539;ea este transmis &#238;n cursul acestei parti comune de transport &#537;i de mediu &#238;n a&#537;a m&#259;sur&#259; ca s&#259; fie primite de c&#259;tre toate nodurile din re&#539;ea, aproape simultan (f&#259;r&#259; a &#539;ine seama de &#238;nt&#226;rzieri r&#259;sp&#238;ndite). </td>
+	<td> <img alt="" src = https://www.scrigroup.com/files/informatica/retele-calculatoare/9_poze/image002-1.gif height=180 width=90%> </td>
+</tr>
+<tr><td>Stea/Star<br>Este tipul de topologie de re&#539;ea &#238;n care fiecare din nodurile de re&#539;ea este conectat la un nod central, numit hub sau switch. Toate datele care sunt transmise &#238;ntre nodurile din re&#539;ea sunt &#238;nt&#226;i transmise &#238;n acest nod central &#537;i abia apoi sunt retransmise la unele sau la toate celelalte noduri &#238;n re&#539;ea. Aceast&#259; conexiune centralizat&#259; permite o conexiune permanent&#259; chiar dac&#259; un dispozitiv de re&#539;ea iese din func&#539;ie. Singurul pericol este ie&#537;irea din func&#539;ie a nodului central, care ar duce la pierderea leg&#259;turii cu toat&#259; re&#539;eaua. </td>
+	<td> <img alt="" src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeaRGwYEAmK0MSDmnVTQVi8SIymt7aHF3E6z7v5YZnEJ2gs_gFlteEhB1nQdvRGwwwcgg&usqp=CAU height=230 width=90%> </td>
+</tr>
+<tr><td>Arbore/Tree<br>O topologie arbore este un tip de topologie de re&#539;ea care include cel pu&#539;in trei niveluri specifice &#238;ntr-o ierarhie de topologie. Topologiile de arbori sunt apreciate pentru scalabilitatea &#537;i accesibilitatea lor pentru depanare.Aceast&#259; topologie include topologii cu stele multiple, care implic&#259; o varietate de noduri unice conectate la un nod central. Stele multiple implic&#259; fie o serie, fie noduri ter&#539;iare ata&#537;ate la dou&#259; sau mai multe noduri secundare, care sunt ata&#537;ate la nodul principal al trunchiului arborelui.</td>
+	<td> <img alt="" src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjOypoUcUtQhGJ1Nb5HC9XJwNzRrOqRUAbG9fmNpJEuAqxK_9-VHBNvV-jjDiqNZw7O1s&usqp=CAU height=200 width=90%> </td>
+</tr>
+<tr><td>Plas&#259;/Mesh<br>O topologie de tip plasa este acea topologie care are conexiuni redundante (duplicate) intre echipamente. Aceasta presupune conectarea tuturor echipamentelor intre ele (fiecare echipament cu fiecare echipament), ceea ce ar insemna costuri foarte mari. Din aceasta cauza, cele mai multe retele de tip plasa nu sunt in mod real retele de tip plasa, ci sunt retele mesh hibride, care contin doar cateva legaturi redundante.</td>
+	<td><img alt="" src = https://upload.wikimedia.org/wikipedia/ro/thumb/b/b6/Meshtopology.png/250px-Meshtopology.png height=200 width=70%></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "tabbed_desktop.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link id="dark" href="css/style.css" rel="stylesheet" />
+<!-- #BeginEditable "docprops" -->
+    <title>tests page</title>
+<script src="dark.js"></script><script src="anchor.js"></script>
+<script language="javascript" type="text/javascript">
+var darkmode = getTheme()
+if (darkmode == "yes"){
+	document.getElementById("dark").href="css/dark.css";
+}
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	// redirects if mobile
+	var host = window.location.hostname;
+	var path = window.location.pathname;
+	var path = window.location.pathname;
+	var root = rootcheck();
+	path = path.substring(root.length, path.length);
+	console.log(root + "mobile/");
+	console.log(path);
+	window.location = root + "mobile/"+ path;
+}
+function devtools() { 
+	var script = document.createElement('script'); 
+	script.src="https://cdn.jsdelivr.net/npm/eruda"; 
+	document.body.append(script); 
+	script.onload = function () { eruda.init(); } 
+}
+function makeCookie() {
+	var accept = getCookie("prompt");
+	if(accept == "accept"){
+		darkmode = prompt("dark mode (yes/no):", "");
+		if (darkmode || darkmode == "") {
+			setCookie("dark", darkmode, 365);
+		}
+	location.reload();
+	}
+	else checkPrompt();
+}
+</script>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "onload" -->
+<body>
+
+<!-- #EndEditable -->
+<table align="center" id="body" class="body" style="width: 100%; max-width: 1000px">
+	<tr>
+		<td style="height: 46px">
+		<h1 class="menu" id="title">Digitix08's Testsite</h1>
+		</td>
+	</tr>
+	<!-- #BeginEditable "menu" -->
+		<tr><td class="menu">
+			<a class="menu" style="" href="index.htm">Home</a>
+			<a class="menu" href="index-old.htm">Search</a>
+			<a class="menu" href="account/login.html">Login</a>
+			<a class="menu" href="games/index.html">Games</a>
+			<a class="menu" href="MINECRAFT.htm">Minecraft srvrs</a>
+			<a class="menucurrent">Tests</a>
+		</td></tr>
+	<!-- #EndEditable -->
+	<!-- #BeginEditable "body" -->
+		<tr>
+				<td>
+		<table class="body" style="width: 100%; max-width: 1000px" align="center">
+			<tr>
+				<td id="darkH1"><h1>Tests</h1>
+		
+		
+		<p><span class="note">
+		<b>Last modified:  </b>
+		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->20.08.2025 15:28<!--webbot bot="TimeStamp" endspan i-checksum="26174" --></span></p>
+		<ol>
+			<li style="list-style-type: decimal">
+			<a id="darklnk" href="controls.html">Browser in browser 
+			(minibrowser)</a> - uses iframes to show pages you visit</li>
+			<li style="list-style-type: decimal">
+			2 temp data test <input name="Button1" onclick="makeCookie()" type="button" value="set dark mode"/> 
+			(pressing "cancel" no longer sets theme)</li>
+			<li style="list-style-type: decimal">
+			3 <input type="button" onclick="devtools()" value="javascript console"/> 
+			for chrome mobile (for some reason)</li>
+			<li style="list-style-type: decimal">
+			4 <a href="settings.html">setting page</a></li>
+			<li style="list-style-type: decimal">
+			5</li>
+			<li style="list-style-type: decimal">
+			6</li>
+			<li style="list-style-type: decimal">
+			7</li>
+			<li style="list-style-type: decimal">
+			8</li>
+			<li style="list-style-type: decimal">
+			9</li>
+			<li style="list-style-type: decimal">
+			0</li>
+		</ol>
+		</td>
+	</tr>
+</table>
+		
+
+
+		
+				</td>
+		</tr>
+	<!-- #EndEditable -->
+</table>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

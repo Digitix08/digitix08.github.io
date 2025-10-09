@@ -16,17 +16,12 @@ var darkmode = getTheme()
 if (darkmode == "yes"){
 	document.getElementById("dark").href="css/dark.css";
 }
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	// redirects if mobile
-	var host = window.location.hostname;
-	var path = window.location.pathname;
-	var path = window.location.pathname;
-	var root = rootcheck();
-	path = path.substring(root.length, path.length);
-	console.log(root + "mobile/");
-	console.log(path);
-	window.location = root + "mobile/"+ path;
-}
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	document.getElementById("dark").href="/mobile/css/style.css";
+	if (darkmode == "yes"){
+		document.getElementById("dark").href="/mobile/css/dark.css";
+		}
+	}
 function devtools() { 
 	var script = document.createElement('script'); 
 	script.src="https://cdn.jsdelivr.net/npm/eruda"; 
@@ -54,26 +49,23 @@ function makeCookie() {
 <!-- #EndEditable -->
 <table align="center" id="body" class="body" style="width: 100%; max-width: 1000px">
 	<tr>
-		<td style="height: 46px">
+		<td colspan="2" style="height: 46px">
 		<h1 class="menu" id="title">Digitix08's Testsite</h1>
 		</td>
 	</tr>
 	<!-- #BeginEditable "menu" -->
-		<tr><td class="menu">
-			<a class="menu" style="" href="index.htm">Home</a>
-			<a class="menu" href="index-old.htm">Search</a>
-			<a class="menu" href="account/login.html">Login</a>
-			<a class="menu" href="games/index.html">Games</a>
-			<a class="menu" href="MINECRAFT.htm">Minecraft srvrs</a>
+		<tr class="ctrltable menu"><td class="menu" style="width:100px">
+			<a class="menu" id="home" href="/index.htm">Home</a>
+			</td><td class="menu" style="width:100%">			<a class="menu" href="index-old.htm">Search</a>
+			<a class="menu" href="/account/login.html">Login</a>
+			<a class="menu" href="/games/index.html">Games</a>
+			<a class="menu" href="/MINECRAFT.htm">Minecraft srvrs</a>
 			<a class="menucurrent">Tests</a>
 		</td></tr>
 	<!-- #EndEditable -->
 	<!-- #BeginEditable "body" -->
-		<tr>
-				<td>
-		<table class="body" style="width: 100%; max-width: 1000px" align="center">
 			<tr>
-				<td id="darkH1"><h1>Tests</h1>
+				<td colspan="2" id="darkH1"><h1>Tests</h1>
 		
 		
 		<p><span class="note">
@@ -104,13 +96,6 @@ function makeCookie() {
 			<li style="list-style-type: decimal">
 			0</li>
 		</ol>
-		</td>
-	</tr>
-</table>
-		
-
-
-		
 				</td>
 		</tr>
 	<!-- #EndEditable -->

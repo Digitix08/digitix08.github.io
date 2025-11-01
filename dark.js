@@ -68,7 +68,7 @@ function getTheme(){
 	if (darkmode == "yes")return "yes";
 	if (darkmode == "black")return "black";
 	if (darkmode == "no")return "no";
-	if (iypeof window.matchMedia != "undefined"){
+	if (typeof window.matchMedia != "undefined"){
 		var mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
 		var isDarkMode = mediaQueryObj.matches;
 		if (isDarkMode){

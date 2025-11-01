@@ -67,12 +67,13 @@ function getTheme(){
 	var darkmode = getCookie("dark");
 	if (darkmode == "yes")return "yes";
 	if (darkmode == "black")return "black";
-	if (darkmode.indexOf("auto")!=-1 && typeof window.matchMedia != "undefined"){
+	if (darkmode == "no")return "no";
+	if (iypeof window.matchMedia != "undefined"){
 		var mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
 		var isDarkMode = mediaQueryObj.matches;
 		if (isDarkMode){
 			if(darkmode.indexOf("dark")!=-1)return "yes";
-			if(darkmode.indexOf("dark")!=-1)return "black";
+			if(darkmode.indexOf("black")!=-1)return "black";
 		}
 	}
 	return "no";

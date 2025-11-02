@@ -74,6 +74,7 @@ function getTheme(){
 		if (isDarkMode){
 			if(darkmode.indexOf("dark")!=-1)return "yes";
 			if(darkmode.indexOf("black")!=-1)return "black";
+			return "yes";
 		}
 	}
 	return "no";

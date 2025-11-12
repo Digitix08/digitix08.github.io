@@ -135,7 +135,7 @@ function loadFirstTapes() {
                     document.getElementById('tapeList').innerHTML = makeTHeader() + tableFormatter(xhr.responseText);
                 }
             };
-            xhr.open("GET", "http://localhost:8000/index-casete/index.php?list=tapes_1", true);
+            xhr.open("GET", "http://digitix08.42web.io/api/index-casete/index.php?list=tapes_1", true);
             xhr.send();
   //loadMoreTapes()
 }
@@ -199,12 +199,12 @@ function loadMoreTapes(offset){
 		<table align="center" id="body" class="body" style="width: 100%; max-width: 1000px">
 		<tr>
 				<td colspan="2">
-				<h1 id="darkH1">Index-ul melodiilor de pe casete</h1>
-		<p><span class="note">
-		<b>Last modified:  </b>
-		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->19.10.2025 16:55<!--webbot bot="TimeStamp" endspan i-checksum="25895" --></span></p>
-		<h2>List of Files</h2>
-		<div id="tapeList">Loading...</div>
+				<h1 id="darkH1">Index-ul melodiilor de pe casete s-a mutat</h1>
+				<p>Îl puteți găsi
+				<a href="http://digitix08.42web.io/index-casete">aici</a></p>
+				<h1 id="darkH1">The tape melodies index moved</h1>
+				<p>You can find it
+				<a href="http://digitix08.42web.io/index-casete">here</a></p>
 		</td>
       </tr>
 	</table>

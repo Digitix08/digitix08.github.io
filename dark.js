@@ -72,7 +72,6 @@ function getTheme(){
 		var mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
 		var isDarkMode = mediaQueryObj.matches;
 		if (isDarkMode){
-			if(darkmode.indexOf("dark")!=-1)return "yes";
 			if(darkmode.indexOf("black")!=-1)return "black";
 			return "yes";
 		}
@@ -100,10 +99,12 @@ function tabCheck(){
 			else if(width < 400&&n[i].innerHTML=="Minecraft srvrs")n[i].innerHTML="MC";
 			else if(n[i].innerHTML=="Minecraft srvrs")n[i].innerHTML="MC srv";
 		}
-		m[0].style.width=nr
-		if(width < 400&&m[0].innerHTML=="Minecraft srvrs")m[0].innerHTML="MC"
-		else if(m[0].innerHTML=="Minecraft srvrs")m[0].innerHTML="MC srv";
-		if(m[0].innerHTML=="Index casete")m[0].innerHTML="Casete"
+		if(m.length>0){
+			m[0].style.width=nr;
+			if(width < 400&&m[0].innerHTML=="Minecraft srvrs")m[0].innerHTML="MC";
+			else if(m[0].innerHTML=="Minecraft srvrs")m[0].innerHTML="MC srv";
+			if(m[0].innerHTML=="Index casete")m[0].innerHTML="Casete";
+		}
 	}}
 }
 function startChecks(){

@@ -26,6 +26,13 @@ P
 	MARGIN-TOP: 0px;
 	PADDING-RIGHT: 10px
 }
+table.body{
+	background-color:#383636;
+	border-collapse:collapse;
+}
+a.menucurrent{
+	display:none;
+}
 .ctrltable{
 	background-color:#705200;
 	color:white;

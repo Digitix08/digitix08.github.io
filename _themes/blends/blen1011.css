@@ -201,7 +201,7 @@ font-style:normal;
 }
 TEXTAREA{
 font-family:"trebuchet ms",arial,helvetica;
-font-style:normal
+font-style:normal;
 }
 FIELDSET{
 border-style:solid;
@@ -216,7 +216,7 @@ font-style:normal;
 SELECT{
 border-style:solid;
 font-family:"trebuchet ms",arial,helvetica;
-font-style:normal
+font-style:normal;
 }
 TABLE{
 font-family:"trebuchet ms",arial,helvetica;
@@ -422,7 +422,7 @@ color:#000000;
 font-weight:bold;
 text-decoration:none;
 }
-:hover.ms-homepagetitle{
+.ms-homepagetitle:hover{
 text-decoration:underline;
 color:#993300;
 }

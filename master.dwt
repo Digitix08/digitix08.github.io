@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=windows-1250" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="css/style.css"/>
+<!-- #BeginEditable "doctitle" -->
+<title>Untitled 1</title>
+<!-- #EndEditable -->
+<!-- #BeginEditable "style&script" -->
+<script type="text/javascript">
+</script>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "login only" --><body onclick="outliner();">
+<!-- #EndEditable -->
+		<div id="main-content"><!-- #BeginEditable "title2" --><h1>Title</h1><!-- #EndEditable --></div>
+<table style="width: 100%">
+	<tr class="ctrltable" style="background-color:#ead858">
+		<td style="width: 107px">
+		<!-- #BeginEditable "backhref" --><!-- #EndEditable --></td>
+		<td><!-- #BeginEditable "href" -->
+		<a style="color:blue" href="index.htm">Home</a>
+		<a style="color:blue" href="chrome%20urls.html">Chrome URLs</a>
+		<a style="color:blue" href="http://www.google.com">Google</a>
+		<a style="color:blue" href="MINECRAFT.htm">Minecraft server(s)</a>
+		<a style="color:blue" href="index-old.htm">Search</a>
+		<a style="color:blue" href="photo_gallery.htm">Photo Gallery</a>
+		<!-- #EndEditable --></td>
+	</tr>
+		</table>
+<!-- #BeginEditable "body" -->
+<div>
+</div>
+<!-- #EndEditable -->
+
+</body>
+
+</html>

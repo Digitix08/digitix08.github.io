@@ -58,6 +58,21 @@ input[type=text], input[type=date], input[type=password]{
 	BORDER-RIGHT: #f0f0f0  2px solid;
 	BORDER-TOP: #a0a0a0 2px solid;
 }
+/*panel for wbcs page*/
+.panel{
+	BACKGROUND-COLOR:#e2e2e2;
+	color: #656565;
+	font-weight: bold;
+	PADDING-BOTTOM: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-RIGHT: 2px;
+}
+
+.panel span{
+	cursor: pointer;
+	color: #000000;
+	font-weight: normal;
+}
 .ctrltable2
 {
 	BACKGROUND-COLOR: #003366;
@@ -200,8 +215,12 @@ a.menu:active{
 a.menucurrent{
 	background-image: url('../images/buttons/menu_tab_selected.png');
 }
-table.body{
+.container{
 	background-color:#ffffff;
+	WIDTH: 1000px
+}
+.table500{
+	width: 500px;
 }
 td.menu{
 	BORDER-BOTTOM: #3F48CC 6px solid;

@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../tabbed_desktop.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link id="dark" href="../css/style.css" rel="stylesheet" />
+<!-- #BeginEditable "docprops" -->
+<title>WebBrowserCS home</title>
+<script type="text/javascript" src="../dark.js"></script>
+<script type="text/javascript">
+var darkmode = getTheme()
+if (darkmode == "yes"){
+	document.getElementById("dark").href="/css/dark.css";
+}
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	document.getElementById("dark").href="/mobile/css/style.css";
+	if (darkmode == "yes"){
+		document.getElementById("dark").href="/mobile/css/dark.css";
+		}
+	}
+
+var versionName = "WebBrowserCS v";
+var currentver = null;
+function getBrowserPrefs(){
+  if(typeof external.GetBrowserVer != "undefined"){
+	var DMXVer = external.GetBrowserVer();
+    if (DMXVer.indexOf(versionName) == 0) { DMXVer = DMXVer.substring(versionName.length); currentver = DMXVer; }
+    document.getElementById("darkH1").innerHTML = "Welcome!";
+    document.getElementById("DMXDiv").innerHTML = "<p>This is the default home page of your browser</p><p>You are currently using WebBrowserCS version " + DMXVer + "</p>";
+    getSearchEngines();
+    getAvailTabs();
+  }
+}
+var defaultSearch = "www.google.com/search?q=";
+function getSearchEngines(){
+  var DMXSearchEngines = parseJSON(external.GetSearchEngines(window.location.href)).SearchEngines;
+  //document.getElementById("DMXDiv").innerHTML = external.getSearchEngines();
+  var html = '';
+  var i = 0
+  defaultSearch = DMXSearchEngines[0];
+  for (i = 0; i < DMXSearchEngines.length && i < 25; i++) {
+    var engine = DMXSearchEngines[i];
+    var EngDisplay = engine;
+    if(EngDisplay.indexOf("://") > -1){ EngDisplay = EngDisplay.substring(EngDisplay.indexOf("://") + 3); }
+    if(EngDisplay.indexOf("/") > 3){ EngDisplay = EngDisplay.substring(0, EngDisplay.indexOf("/")); }
+
+    html += '<span onclick="GoToPage(\'' + engine + '\' + document.getElementById(\'SRText\').value)">' + EngDisplay + '</span>';
+    if(DMXSearchEngines.length>1 && i < DMXSearchEngines.length - 1){ html += '<br>'; }
+  }
+  if(html.length>0){ document.getElementById('SearchEngDiv').innerHTML = html; }
+  document.getElementById("NewSearch").setAttribute("onclick", "GoToPage('" + defaultSearch + "' + document.getElementById('SRText').value)")
+}
+
+function createXHR() {
+  if (window.XMLHttpRequest) {
+    return new XMLHttpRequest();
+  } else {
+    try {
+      return new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        return new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e2) {
+        return null;
+      }
+    }
+  }
+}
+
+function checkVersion() {
+    var xhr = createXHR();
+    if (!xhr) return;
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var data = parseJSON(xhr.responseText);
+            for (var i = 0; i < data.length && i < 1; i++) {
+                var version = data[i];
+                if(currentver != null && currentver != version.tag_name)document.getElementById('DMXDiv').innerHTML += "<p>You are not using the latest version. <a href='releases.html'>Go here</a> to download it</p>"
+            }
+        }
+    };
+
+    xhr.open("GET", "https://api.github.com/repos/digitix08/webbrowsercs/releases", true);
+    xhr.send();
+}
+
+function getAvailTabs(){
+  var DMXTabsRaw = external.GetAvailableTabs(window.location.href);
+  if (DMXTabsRaw != null){
+    var DMXTabs = parseJSON(DMXTabsRaw).AvailableTabs;
+    var html = '';
+    var i = 0
+    for (i = 0; i < DMXTabs.length && i < 25; i++) {
+      var tab = DMXTabs[i];
+      var name = tab.name;
+      var command = tab.command;
+    
+      while (name.indexOf(" ") > -1){ name = name.substring(0, name.indexOf(" ")) + "&nbsp;" + name.substring(name.indexOf(" ") + 1); }
+    
+      var shtml = '<span onclick="GoToPageNewTab(document.getElementById(\'OPText\').value, \'' + command + '\')">' + name + '</span>';
+    
+      if (tab.hasOwnProperty("tab_name")){
+        shtml = '<span onclick="GoToPageNewTab(document.getElementById(\'OPText\').value, \'' + command + "_;_" + tab.tab_name + '\')">' + name + '</span>';
+      }
+      html += shtml;
+      if(DMXTabs.length>1 && i < DMXTabs.length - 1){ html += '<br>'; }
+    }
+    if(html.length>0){ document.getElementById('NewTabsDiv').innerHTML = html; }
+  }
+}
+
+function GoToPage(pageUrl){
+  if(pageUrl.length == 0)return;
+  if(pageUrl.indexOf('http://') != 0 && pageUrl.indexOf('https://') != 0){
+    if(pageUrl.indexOf('://') > 0 && pageUrl.indexOf('://') <= 10){ alert("unsupported format"); return; }
+    else if(pageUrl.indexOf('://') == 0) pageUrl = 'http' + pageUrl;
+    else pageUrl = 'http://' + pageUrl;
+  }
+  window.location.href=pageUrl;
+}
+
+function GoToPageNewTab(pageUrl, NewPageMode){
+  if(pageUrl.length == 0)return;
+  if(pageUrl.indexOf('http://') != 0 && pageUrl.indexOf('https://') != 0){
+    if(pageUrl.indexOf('://') > 0 && pageUrl.indexOf('://') <= 10){ alert("unsupported format"); return; }
+    else if(pageUrl.indexOf('://') == 0) pageUrl = 'http' + pageUrl;
+    else pageUrl = 'http://' + pageUrl;
+  }
+  if(NewPageMode != 'default'){
+    var textToLoad = external.warn("failed attempt at loading tab")
+    if(NewPageMode.indexOf("NewUserTab") == 0 && NewPageMode.indexOf("_;_") != NewPageMode.length - 1){
+      textToLoad = "external.NewUserTab('" + window.location.href + "', '" + NewPageMode.substring(NewPageMode.indexOf("_;_") + 3) + "', '" + pageUrl + "')";
+    }
+    else textToLoad = "external." + NewPageMode + "('" + window.location.href + "', '" + pageUrl + "')";
+    alert(textToLoad);
+    eval(textToLoad);
+  }
+  else window.open(pageUrl, '_blank')
+}
+
+function togglePanel(str) {
+  var desc = document.getElementById(str);
+  desc.style.display = (desc.style.display === "none" || desc.style.display === "" ? "block" : "none")
+}
+
+function toggleInline(str) {
+  var desc = document.getElementById(str);
+  desc.style.display = (desc.style.display === "none" || desc.style.display === "" ? "inline" : "none")
+}
+
+function enterPress(e, text, issearch) {
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if (code == 13) { //Enter keycode
+	if (issearch == true) {
+	  eval("GoToPage('" + defaultSearch + "' + text)");
+    }
+    else GoToPage(text)
+  }
+}
+
+window.onload = function () {
+  if (typeof window.external != "undefined") getBrowserPrefs();
+  checkVersion();
+}
+</script>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "onload" -->
+<body>
+
+<!-- #EndEditable -->
+<table align="center" id="body" class="container">
+	<tr>
+		<td style="height: 46px" colspan="2">
+		<h1 class="menu" id="title">Digitix08's Testsite</h1>
+		</td>
+	</tr>
+	<!-- #BeginEditable "menu" -->
+	<tr class="ctrltable menu"><td class="menu" style="width:100px">
+		<a class="menu" id="home" href="../index.htm">Home</a>
+		</td><td class="menu" style="width:100%">
+		<a class="menu" href="../index-old.htm">Search</a>
+		<a class="menu" href="../account/login.html">Login</a>
+		<a class="menu" href="../games/index.html">Games</a>
+		<a class="menu" href="../MINECRAFT.htm">Minecraft srvrs</a>
+		<a class="menu" href="index.html">WebBrowser CS</a></td>
+	</tr>
+	<!-- #EndEditable -->
+	<!-- #BeginEditable "body" -->
+	<tr>
+		<td colspan="2"><h1 id="darkH1">Web Browser CS Home</h1>
+		<div id="DMXDiv">
+		<p>Welcome to the landing page for WebBrowserCS.</p>
+		<p>For a better experience please use <strong>IE tab or window</strong> from 
+		within WebBrowserCS 
+		to visit this page.</p>
+		</div>
+		<p style="margin-bottom: 5px">To begin, go to a page:</p>
+		<table align="left" class="table500">
+		  <tr>
+		  <td style="padding: 0 0 0 10px">
+			<input id="OPText" type="text" style="width: 98%" onkeydown="enterPress(event, this.value, false)" />
+		  </td>
+		  <td style="position: relative; padding: 0; width: 90px">
+		    <input id="NewPage" type="button" value="Open" onclick="GoToPage(document.getElementById('OPText').value)" /><input id="more1" type="button" onclick="togglePanel('DMXMoreDiv1'); toggleInline('NewSearch'); toggleInline('more2')" value="\/" />
+			<div id="DMXMoreDiv1" class="panel" style="position:absolute; top: 100%; left:0; display:none; z-index: 1000001">
+			  Open&nbsp;in...
+			  <div id="NewTabsDiv">
+			  <span onclick="GoToPageNewTab(document.getElementById('OPText').value, 'default')">New&nbsp;tab</span>
+			  </div>
+			</div>
+		  </td>
+		  </tr>
+		</table><br /><br />
+		<p style="margin-bottom: 5px">Or search something:</p>
+		<table align="left" class="table500">
+		  <tr>
+		  <td style="padding: 0 0 0 10px">
+			<input id="SRText" type="text" style="width: 98%" onkeydown="enterPress(event, this.value, true)" />
+		  </td>
+		  <td style="position: relative; padding: 0; width: 90px">
+		    <input id="NewSearch" type="button" value="Search" style="display:inline" onclick="GoToPage('google.com/search?q=' + document.getElementById('SRText').value)" /><input id="more2" type="button" style="display:inline" onclick="togglePanel('DMXMoreDiv2')" value="\/" />
+			<div id="DMXMoreDiv2" class="panel" style="position:absolute; top: 100%; left:0; display:none; z-index: 1000000">
+			  Search&nbsp;with...
+			  <div id="SearchEngDiv">
+			  <span onclick="GoToPage('google.com/search?q=' + document.getElementById('SRText').value)">Google</span>
+			  <br/><span onclick="GoToPage('bing.com/search?q=' + document.getElementById('SRText').value)">Bing</span>
+			  <br/><span onclick="GoToPage('duckduckgo.com/?q=' + document.getElementById('SRText').value)">DuckDuckGo</span>
+			  <br/><span onclick="GoToPage('wikipedia.org/w/index.php?search=' + document.getElementById('SRText').value)">Wikipedia</span>
+			  <br/><span onclick="GoToPage('tube.redtro.net/search.php?q=' + document.getElementById('SRText').value)">RedTro&nbsp;Tube</span>
+			  </div>
+			</div>
+		  </td>
+		  </tr>
+		</table><br /><br />
+		<p><strong>More resources:</strong><br />
+		<a href="index.html">Main WBCS page</a>, <a href="releases.html">WBCS 
+		releases</a></p>
+		<p>&nbsp;</p>
+		</td>
+	</tr>
+	<!-- #EndEditable -->
+</table>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

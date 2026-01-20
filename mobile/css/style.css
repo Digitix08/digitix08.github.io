@@ -25,10 +25,16 @@ P
 	MARGIN-TOP: 0px;
 	PADDING-RIGHT: 10px
 }
-table.body{
+.container{
 	background-color:#ffffff;
+	WIDTH: 100%;
 	border-collapse:collapse;
 }
+
+.table500{
+	width: 100%
+}
+
 a.menucurrent{
 	display:none;
 }
@@ -74,6 +80,20 @@ input[type=text], input[type=date], input[type=password]{
 	BORDER-LEFT: #a0a0a0 2px solid;
 	BORDER-RIGHT: #f0f0f0  2px solid;
 	BORDER-TOP: #a0a0a0 2px solid;
+}
+.panel{
+	BACKGROUND-COLOR:#e2e2e2;
+	color: #656565;
+	font-weight: bold;
+	PADDING-BOTTOM: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-RIGHT: 2px;
+}
+
+.panel span{
+	cursor: pointer;
+	color: #000000;
+	font-weight: normal;
 }
 .ctrltable2
 {

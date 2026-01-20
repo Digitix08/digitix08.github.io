@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../tabbed_desktop.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<link id="dark" href="../css/style.css" rel="stylesheet" />
+<!-- #BeginEditable "docprops" -->
+<title>The WebBrowserCS</title>
+<script type="text/javascript" src="../dark.js"></script>
+<script type="text/javascript">
+var darkmode = getTheme()
+if (darkmode == "yes"){
+	document.getElementById("dark").href="/css/dark.css";
+}
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	document.getElementById("dark").href="/mobile/css/style.css";
+	if (darkmode == "yes"){
+		document.getElementById("dark").href="/mobile/css/dark.css";
+		}
+	}
+
+function createXHR() {
+  if (window.XMLHttpRequest) {
+    return new XMLHttpRequest();
+  } else {
+    try {
+      return new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        return new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e2) {
+        return null;
+      }
+    }
+  }
+}
+
+function loadRecentReleases() {
+    var xhr = createXHR();
+    if (!xhr) return;
+
+    document.getElementById('recent-downloads').innerHTML = "Loading...<br>" + document.getElementById('recent-downloads').innerHTML;
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var data = parseJSON(xhr.responseText);
+            var html = "<p>";
+            var count = 4;
+
+            for (var i = 0; i < data.length && i < 48; i++) {
+                var version = data[i];
+                var anycpu = 1;
+                var sixtyfour = 1;
+                html += "<strong>" + version.name + "</strong>";
+                if(version.prerelease)html += " (pre-release)";
+                html += ": ";
+                for (var j = 0; j < version.assets.length && j < 12; j++){
+                    var asset = version.assets[j];
+                    var flag = false;
+                    if (sixtyfour >= 2 || anycpu >= 2)html += ", ";
+                    html += "<a href='" + asset.browser_download_url + "'>";
+                    if(asset.name.indexOf("64") != -1){ html += "x64"; sixtyfour++; flag = true; }
+                    else { html += "anycpu"; anycpu++; }
+                    var revname = "";
+                    var asset2 = asset.browser_download_url;
+                    while(asset2.indexOf("/") != -1){
+                      asset2 = asset2.substring(asset2.indexOf("/") + 1);
+                      if(asset2.indexOf("/") != -1)revname = asset2.substring(asset2.indexOf("/") + 1, asset2.length - 4);
+                      else break;
+                    }
+                    html += " (" + revname + ")";
+                    
+                    html += "</a>";
+                }
+                html += "<br/>";
+            }
+            html += "</p>";
+
+            document.getElementById('recent-downloads').innerHTML = html;
+        }
+    };
+
+    xhr.open("GET", "https://api.github.com/repos/digitix08/webbrowsercs/releases", true);
+    xhr.send();
+}
+
+window.onload = function(){ loadRecentReleases(); }
+</script>
+<!-- #EndEditable -->
+</head>
+
+<!-- #BeginEditable "onload" -->
+<body>
+
+<!-- #EndEditable -->
+<table align="center" id="body" class="container">
+	<tr>
+		<td style="height: 46px" colspan="2">
+		<h1 class="menu" id="title">Digitix08's Testsite</h1>
+		</td>
+	</tr>
+	<!-- #BeginEditable "menu" -->
+	<tr class="ctrltable menu"><td class="menu" style="width:100px">
+		<a class="menu" id="home" href="../index.htm">Home</a>
+		</td><td class="menu" style="width:100%">
+		<a class="menu" href="../index-old.htm">Search</a>
+		<a class="menu" href="../account/login.html">Login</a>
+		<a class="menu" href="../games/index.html">Games</a>
+		<a class="menu" href="../MINECRAFT.htm">Minecraft srvrs</a>
+		<a class="menucurrent">WebBrowser CS</a></td>
+	</tr>
+	<!-- #EndEditable -->
+	<!-- #BeginEditable "body" -->
+	<tr>
+		<td colspan="2"><h1 id="darkH1">Web Browser CS</h1>
+		<p>Have you ever wanted to use both modern Chromium AND old Internet 
+		Explorer <strong>in the same program</strong>?</p>
+		<p>Well, search no more, we have the solution for you: <strong>
+		WebBrowserCS</strong></p>
+		<p><strong>Navigation:<br />
+		<a href="#features">Features</a></strong><br />
+		<strong><a href="#specs">Specifications</a></strong><br />
+		<strong><a href="#requirements">System requirements</a></strong><br />
+		<a href="#downloads"><strong>Downloads</strong></a><br />
+		</p>
+		<a name="features"></a><h2><strong>Features</strong></h2>
+		<p><strong>IE Tab</strong>: For your Legacy browser needs, IE Tab can 
+		use any IE version from 7 up (by default set to 7)<br />
+		<img class="table500" alt="IE  tab preview" src="../images/IETab.jpg" /></p>
+		<p><strong>Chromium tab</strong>: in case you ever need to use any html5 
+		pages<br />
+		<img class="table500" alt="Chromium tab preview" src="../images/chromiumview.jpg" /></p>
+		<p><strong>A basic text editor</strong>: beware that it is kind of slow in loading files...<br/>
+		<img class="table500" alt="File tab preview" src="../images/text_tab.jpg" /></p>
+		<a name="specs"></a><h2>Specifications</h2>
+		<p style="margin-bottom: 0"><strong>IE mode</strong>: IE7 to IE11<br /><strong>Chromium mode</strong>: Chromium 129 (CEFSharp 129)</p>
+		<a name="requirements"></a><h2>Requirements</h2>
+		<p><strong>Microsoft .net runtime</strong>: 4.7<br />
+		<strong>Platform</strong>: 32 or 64 bit, NO ARM (yet)</p>
+		<h2><a name="downloads"></a>Downloads</h2>
+		<p><a href="releases.html">See all Releases</a></p>
+		<div id="recent-downloads">
+		  <p><strong>WBCS-1.2.0.0</strong>: <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.2.0.0/install_64.exe">x64 (install_64)</a> <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.2.0.0/install_anycpu.exe">anycpu (install_anycpu)</a> <br/>
+		  <strong>WBCS-1.1.1.4</strong>: <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.4/install.exe">anycpu (install)</a> <br/>
+		  <strong>WBCS-1.1.1.3</strong>: <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.3/v1.1.1.3.exe">anycpu (v1.1.1.3)</a> <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.3/v1.1.1.3.zip">anycpu (v1.1.1.3)</a> <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.3/v1.1.1.3_01.exe">anycpu (v1.1.1.3_01)</a> <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.3/v1.1.1.3_02.exe">anycpu (v1.1.1.3_02)</a> <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.3/v1.1.1.3_03.exe">anycpu (v1.1.1.3_03)</a> <br/>
+		  <strong>WBCS-1.1.1.2</strong>: <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.2/V1.1.1.2.rar">anycpu (V1.1.1.2)</a> <br/>
+		  <strong>WBCS-1.1.1.1</strong>: <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.1/v1.1.1.1.zip">anycpu (v1.1.1.1)</a> <br/>
+		  <strong>WBCS-1.1.1.0</strong>: <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.0/V1.1.1.0.rar">anycpu (V1.1.1.0)</a> <a href="https://github.com/Digitix08/WebBrowserCS/releases/download/1.1.1.0/WebBrowserV1.1.1.0.zip">anycpu (WebBrowserV1.1.1.0)</a> <br/>
+		  </p></div>
+		</td>
+	</tr>
+	<!-- #EndEditable -->
+</table>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

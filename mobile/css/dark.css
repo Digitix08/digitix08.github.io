@@ -26,10 +26,17 @@ P
 	MARGIN-TOP: 0px;
 	PADDING-RIGHT: 10px
 }
-table.body{
+
+.container{
 	background-color:#383636;
+	WIDTH: 100%;
 	border-collapse:collapse;
 }
+
+.table500{
+	width: 100%
+}
+
 a.menucurrent{
 	display:none;
 }
@@ -75,6 +82,21 @@ input[type=text], input[type=date], input[type=password]{
 	BORDER-LEFT: #000000 2px solid;
 	BORDER-RIGHT: #545454 2px solid;
 	BORDER-TOP: #000000 2px solid;
+}
+/*panel for wbcs page*/
+.panel{
+	BACKGROUND-COLOR:#545454;
+	color: #bfbfbf;
+	font-weight: bold;
+	PADDING-BOTTOM: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-RIGHT: 2px;
+}
+
+.panel span{
+	cursor: pointer;
+	color: #ffffff;
+	font-weight: normal;
 }
 .ctrltable2
 {

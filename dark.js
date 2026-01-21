@@ -4,6 +4,7 @@ if (typeof console == "undefined") {
     	this.console = { log: function (msg) { /*alert(msg);*/ } };
     else this.console = { log: function (msg) { external.log(msg); } };
 }
+//polifills
 document.getElementsByClassName = function(cl) {
   var retnode = [];
   var elem = this.getElementsByTagName('*');
@@ -12,6 +13,25 @@ document.getElementsByClassName = function(cl) {
   }
   return retnode;
 }; 
+function parseJSON(str) {
+  return eval("(" + str + ")");
+};
+//for xmlhttp
+function createXHR() {
+  if (window.XMLHttpRequest) {
+    return new XMLHttpRequest();
+  } else {
+    try {
+      return new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        return new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e2) {
+        return null;
+      }
+    }
+  }
+};
 function checkBody() {
 	if(document.body) {console.log("correct");startChecks();}
 	else {console.log("no");setTimeout(checkPrompt(), 3000);}
@@ -111,7 +131,7 @@ function startChecks(){
 	console.log("page start code, width is " + window.innerWidth);
 	mobileCheck();
 	checkPrompt();
-	tabCheck();
+	//tabCheck();
 }
 function setCookie(cname, cvalue, exdays){
 	if (exdays!=null&&exdays.toString().indexOf("actualdate+") != -1){

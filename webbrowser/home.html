@@ -55,22 +55,6 @@ function getSearchEngines(){
   document.getElementById("NewSearch").setAttribute("onclick", "GoToPage('" + defaultSearch + "' + document.getElementById('SRText').value)")
 }
 
-function createXHR() {
-  if (window.XMLHttpRequest) {
-    return new XMLHttpRequest();
-  } else {
-    try {
-      return new ActiveXObject("Msxml2.XMLHTTP");
-    } catch (e) {
-      try {
-        return new ActiveXObject("Microsoft.XMLHTTP");
-      } catch (e2) {
-        return null;
-      }
-    }
-  }
-}
-
 function checkVersion() {
     var xhr = createXHR();
     if (!xhr) return;

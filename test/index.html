@@ -1,20 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- #BeginTemplate "tabbed_desktop.dwt" -->
+<!-- #BeginTemplate "../tabbed_desktop.dwt" -->
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<link id="dark" href="css/style.css" rel="stylesheet" />
+<link id="dark" href="../css/style.css" rel="stylesheet" />
 <!-- #BeginEditable "docprops" -->
     <title>tests page</title>
-<script src="dark.js"></script><script src="anchor.js"></script>
+<script src="../dark.js"></script><script src="../anchor.js"></script>
 <script language="javascript" type="text/javascript">
 var darkmode = getTheme()
 if (darkmode == "yes"){
-	document.getElementById("dark").href="css/dark.css";
+	document.getElementById("dark").href="/css/dark.css";
 }
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
 	document.getElementById("dark").href="/mobile/css/style.css";
@@ -40,6 +40,11 @@ function makeCookie() {
 	else checkPrompt();
 }
 </script>
+<style type="text/css">
+ol li{
+	list-style-type: decimal
+}
+</style>
 <!-- #EndEditable -->
 </head>
 
@@ -56,7 +61,7 @@ function makeCookie() {
 	<!-- #BeginEditable "menu" -->
 		<tr class="ctrltable menu"><td class="menu" style="width:100px">
 			<a class="menu" id="home" href="/index.htm">Home</a>
-			</td><td class="menu" style="width:100%">			<a class="menu" href="index-old.htm">Search</a>
+			</td><td class="menu" style="width:100%">			<a class="menu" href="../index-old.htm">Search</a>
 			<a class="menu" href="/account/login.html">Login</a>
 			<a class="menu" href="/games/index.html">Games</a>
 			<a class="menu" href="/MINECRAFT.htm">Minecraft srvrs</a>
@@ -70,30 +75,31 @@ function makeCookie() {
 		
 		<p><span class="note">
 		<b>Last modified:  </b>
-		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->21.01.2026 19:40<!--webbot bot="TimeStamp" endspan i-checksum="25234" --></span></p>
+		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->22.01.2026 19:29<!--webbot bot="TimeStamp" endspan i-checksum="26260" --></span></p>
 		<ol>
-			<li style="list-style-type: decimal">
-			<a id="darklnk" href="controls.html">Browser in browser 
+			<li>
+			<a id="darklnk" href="../controls.html">Browser in browser 
 			(minibrowser)</a> - uses iframes to show pages you visit</li>
-			<li style="list-style-type: decimal">
-			2 temp data test <input name="Button1" onclick="makeCookie()" type="button" value="set dark mode"/> 
+			<li>
+			theme test
+			<input name="Button1" onclick="makeCookie()" type="button" value="set dark mode"/> 
 			(pressing "cancel" no longer sets theme)</li>
-			<li style="list-style-type: decimal">
-			3 <input type="button" onclick="devtools()" value="javascript console"/> 
+			<li>
+			<input type="button" onclick="devtools()" value="javascript console"/> 
 			for chrome mobile (for some reason)</li>
-			<li style="list-style-type: decimal">
-			4 <a href="settings.html">setting page</a></li>
-			<li style="list-style-type: decimal">
-			5</li>
-			<li style="list-style-type: decimal">
-			6</li>
-			<li style="list-style-type: decimal">
+			<li>
+			<a href="../settings.html">setting page</a></li>
+			<li>
+			<a href="diacritics.html">Diacritics in HTML</a></li>
+			<li>
+			<a href="emojis.html">Available emojis</a></li>
+			<li>
 			7</li>
-			<li style="list-style-type: decimal">
+			<li>
 			8</li>
-			<li style="list-style-type: decimal">
+			<li>
 			9</li>
-			<li style="list-style-type: decimal">
+			<li>
 			0</li>
 		</ol>
 				</td>

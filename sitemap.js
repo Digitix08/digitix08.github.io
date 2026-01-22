@@ -1,4 +1,4 @@
-﻿function subfolder(){
+function subfolder(){
 	sel3remove();
 	var sel2 = document.getElementById("Select2");
 	if(sel2.value == "Snow%20boarder%20v1.0_web/")snowboarder();
@@ -129,7 +129,7 @@ function school(sel){
 	selectElement.add(new Option ("book12.html", "book12.html"));
 	selectElement.add(new Option ("cpp-vii.html", "cpp-vii.html"));
 	selectElement.add(new Option ("cpp-viii.html", "cpp-viii.html"));
-	selectElement.add(new Option ("câni.html", "câni.html"));
+	selectElement.add(new Option ("c&#226;ni.html", "c&#226;ni.html"));
 	selectElement.add(new Option ("horar%20gabi(1).html", "horar%20gabi(1).html"));
 	selectElement.add(new Option ("horar%20gabi.html", "horar%20gabi.html"));
 	selectElement.add(new Option ("index.htm", "index.htm"));

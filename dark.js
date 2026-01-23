@@ -65,9 +65,8 @@ function mobileCheck(){
 		if(document.getElementById("darkH1")!=null){
 			document.getElementById("title").innerHTML = document.getElementById("darkH1").innerHTML
 			document.getElementById("darkH1").outerHTML = "";
-			document.getElementById("body").style.maxWidth="";
-			document.getElementById("home").innerHTML="<img border=\"0\" id=\"img4\" src=\"http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back.gif\" style=\"height:21; width:100;\" alt=\"Back\" onmouseover=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p.gif')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back.gif')\" onmousedown=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p_s.gif')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p.gif')\"/>"
 			}
+		document.getElementById("home").innerHTML="<img border=\"0\" id=\"img4\" src=\"http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back.gif\" style=\"height:21; width:100;\" alt=\"Back\" onmouseover=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p.gif')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back.gif')\" onmousedown=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p_s.gif')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p.gif')\"/>";
 		}
 }
 function checkPrompt() {

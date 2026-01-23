@@ -22,6 +22,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		document.getElementById("dark").href="/mobile/css/dark.css";
 		}
 	}
+window.onload = function(){ changeHomedir(); }
 </script>
 <!-- #EndEditable -->
 </head>
@@ -44,7 +45,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		<a class="menu" href="../account/login.html">Login</a>
 		<a class="menu" href="../games/index.html">Games</a>
 		<a class="menu" href="../MINECRAFT.htm">Minecraft srvrs</a>
-		<a class="menu" href="index.html">Articole parinti</a> </td>
+		<a class="menu" id="toChange" href="index.html">Articole parinti</a> </td>
 	</tr>
 	<!-- #EndEditable -->
 	<!-- #BeginEditable "body" -->

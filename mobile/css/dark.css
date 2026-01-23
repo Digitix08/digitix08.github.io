@@ -33,7 +33,7 @@ P
 	border-collapse:collapse;
 }
 
-.table500{
+.table250, .table500, .table750{
 	width: 100%
 }
 

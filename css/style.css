@@ -219,8 +219,14 @@ a.menucurrent{
 	background-color:#ffffff;
 	WIDTH: 1000px
 }
+.table250{
+	width: 250px;
+}
 .table500{
 	width: 500px;
+}
+.table750{
+	width: 750px;
 }
 td.menu{
 	BORDER-BOTTOM: #3F48CC 6px solid;

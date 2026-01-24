@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- #BeginTemplate "../tabbed_desktop.dwt" -->
@@ -10,8 +10,8 @@
 <link id="dark" href="../css/style.css" rel="stylesheet" />
 <!-- #BeginEditable "docprops" -->
 <title>login</title>
-<script src="../dark.js"></script><script src="../anchor.js"></script>
-<script language="javascript" type="text/javascript">
+<script type="text/javascript" src="../dark.js"></script>
+<script type="text/javascript">
 var darkmode = getCookie("dark"), redirURL;
 if (darkmode == "yes")document.getElementById("dark").href="../css/dark.css";
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
@@ -79,13 +79,20 @@ function LogOut() {
 window.onload = function(){ checklogin(); }
 </script>
 <!-- #EndEditable -->
+<style type="text/css">
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
 </head>
 
 <!-- #BeginEditable "onload" -->
 <body>
 
 <!-- #EndEditable -->
-<table align="center" id="body" class="container">
+<table id="body" class="container">
 	<tr>
 		<td style="height: 46px" colspan="2">
 		<h1 class="menu" id="title">Digitix08's Testsite</h1>
@@ -109,7 +116,7 @@ window.onload = function(){ checklogin(); }
 					<p>&nbsp;</p>
 </div>
 <form onsubmit="return false">
-	<table border="1" bordercolor="white" cellpadding="2" cellspacing="0" class="infotable" width="400px">
+	<table border="1" cellpadding="2" cellspacing="0" class="infotable" width="400px">
 		<tr class="row">
 			<td>User:</td>
 			<td><input id="user" autocomplete="username" required type="text" /> </td>

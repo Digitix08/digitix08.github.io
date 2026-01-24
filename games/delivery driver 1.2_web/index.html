@@ -12,8 +12,8 @@
 <link rel="shortcut icon" href="TemplateData/favicon.ico"/>
 <link rel="stylesheet" href="TemplateData/style.css"/>
 <title>Unity WebGL Player | Delivery driver</title>
-<script src="/dark.js"></script>
-<script language="javascript" type="text/javascript">
+<script type="text/javascript" src="/dark.js"></script>
+<script type="text/javascript">
 var darkmode = getTheme()
 if (darkmode == "yes"){
 	document.getElementById("dark").href="/css/dark.css";
@@ -27,13 +27,20 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 window.onload = function(){ changeHomedir() }
 </script>
 <!-- #EndEditable -->
+<style type="text/css">
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
 </head>
 
 <!-- #BeginEditable "onload" -->
 <body>
 
 <!-- #EndEditable -->
-<table align="center" id="body" class="container">
+<table id="body" class="container">
 	<tr>
 		<td style="height: 46px" colspan="2">
 		<h1 class="menu" id="title">Digitix08's Testsite</h1>
@@ -54,7 +61,7 @@ window.onload = function(){ changeHomedir() }
 	<!-- #BeginEditable "body" -->
 	<tr>
 		<td colspan="2">
-		<h1 id="darkH1">Delivery driver <em>v1.1_web</em></h1>
+		<h1 id="darkH1">Delivery driver <em>v1.2_web</em></h1>
 		<hr>
 		<p>Game made by me. Now with UI!</p>
 	<div style="height:650px">
@@ -175,7 +182,7 @@ window.onload = function(){ changeHomedir() }
       };
       document.body.appendChild(script);
     </script>
-</td>
+	</td>
 	</tr>
 	<!-- #EndEditable -->
 </table>

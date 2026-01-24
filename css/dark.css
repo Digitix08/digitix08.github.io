@@ -74,6 +74,12 @@ input[type=text], input[type=date], input[type=password]{
 	color: #ffffff;
 	font-weight: normal;
 }
+.UserToolbar{
+	background-image:url('/_themes/blends_dark/toolgrad.gif');
+	border:1px solid #BBBBBB;
+	background-repeat:repeat-x;
+	background-color:transparent
+}
 .ctrltable2
 {
 	BACKGROUND-COLOR:#003366;
@@ -233,6 +239,7 @@ td.menu{
 }
 H2
 {
+	BORDER-BOTTOM: #CC6600 2px solid;
 	COLOR: #ffffff;
 	FONT-SIZE: 90%;
 	FONT-WEIGHT: bold;

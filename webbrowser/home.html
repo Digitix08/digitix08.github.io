@@ -152,14 +152,29 @@ window.onload = function () {
   checkVersion();
 }
 </script>
+<style type="text/css">
+
+
+
+.left{
+	margin-left: 0;
+}
+</style>
 <!-- #EndEditable -->
+<style type="text/css">
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
 </head>
 
 <!-- #BeginEditable "onload" -->
 <body>
 
 <!-- #EndEditable -->
-<table align="center" id="body" class="container">
+<table id="body" class="container">
 	<tr>
 		<td style="height: 46px" colspan="2">
 		<h1 class="menu" id="title">Digitix08's Testsite</h1>
@@ -186,7 +201,7 @@ window.onload = function () {
 		to visit this page.</p>
 		</div>
 		<p style="margin-bottom: 5px">To begin, go to a page:</p>
-		<table align="left" class="table500">
+		<table class="table500 left">
 		  <tr>
 		  <td style="padding: 0 0 0 10px">
 			<input id="OPText" type="text" style="width: 98%" onkeydown="enterPress(event, this.value, false)" />
@@ -203,7 +218,7 @@ window.onload = function () {
 		  </tr>
 		</table><br /><br />
 		<p style="margin-bottom: 5px">Or search something:</p>
-		<table align="left" class="table500">
+		<table class="table500 left">
 		  <tr>
 		  <td style="padding: 0 0 0 10px">
 			<input id="SRText" type="text" style="width: 98%" onkeydown="enterPress(event, this.value, true)" />

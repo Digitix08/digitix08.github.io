@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- #BeginTemplate "tabbed_desktop.dwt" -->
@@ -11,7 +11,7 @@
 <!-- #BeginEditable "docprops" -->
 <title>Welcome to my site</title>
 <script type="text/javascript" src="dark.js"></script>
-<script language="javascript" type="text/javascript">
+<script type="text/javascript">
 var darkmode = getTheme()
 if (darkmode == "yes"){
 	document.getElementById("dark").href="/css/dark.css";
@@ -25,12 +25,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 </script>
 <style type="text/css">
 
-.UserToolbar{
-background-image:url('_themes/blends/toolgrad.gif');
-border:1px solid #BBBBBB;
-background-repeat:repeat-x;
-background-color:transparent
-}
+
+
+
 .auto-style3 {
 	border-left-style: solid;
 	border-left-width: 1px;
@@ -50,13 +47,20 @@ background-color:transparent
 }
 </style>
 <!-- #EndEditable -->
+<style type="text/css">
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
 </head>
 
 <!-- #BeginEditable "onload" -->
 <body>
 
 <!-- #EndEditable -->
-<table align="center" id="body" class="container">
+<table id="body" class="container">
 	<tr>
 		<td style="height: 46px" colspan="2">
 		<h1 class="menu" id="title">Digitix08's Testsite</h1>
@@ -116,9 +120,9 @@ background-color:transparent
 					to page</em></a><em>" instead</em></p>
 		<p><em>Added <a href="art%20parinti">art parinti</a> subfolder</em></p>
 		<hr /><p>
-		<a href="https://github.com/digitix08/digitix08.github.io/"><img border="0" id="img1" src="images/meGithub.jpg" height="40" width="140" alt="Me on github" /></a><a href=https://github.com/digitix08/repository>
+		<a href="https://github.com/digitix08/digitix08.github.io/"><img alt="Me on github" height="40" id="img1" src="images/meGithub.jpg" style="border: 0" width="140" /></a><a href="https://github.com/digitix08/repository">
 </a>
-<a href=useful_links.html>useful links</a>
+<a href="useful_links.html">useful links</a>
 </p>
 		</td>
 	</tr>

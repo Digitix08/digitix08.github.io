@@ -12,12 +12,9 @@ $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
 if (in_array($origin, $allowedOrigins)) {
     header("Access-Control-Allow-Origin: $origin");
     header("Vary: Origin");
+    file_put_contents('debug.log', date('c') . " [{$origin}] Was allowed access\n", FILE_APPEND);
 }
-
-
-
-
-
+else file_put_contents('debug.log', date('c') . " [{$origin}] Was denied access\n", FILE_APPEND);
 
 function reader($tapes){
 

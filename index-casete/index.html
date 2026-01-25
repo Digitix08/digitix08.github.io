@@ -164,7 +164,7 @@ function loadFirstTapes(nr) {
                     loadMoreTapes("tapes_", 2, nr);
                 }
             };
-            xhr.open("GET", protocol + "//digitix08.42web.io/api/index-casete/index.php?list=tapes_1", true);
+            xhr.open("GET", protocol + "//gabi.redtro.net/api/index-casete/index.php?list=tapes_1", true);
             xhr.send();
 }
 
@@ -187,7 +187,7 @@ function loadMoreTapes(file, nr, cnt){
       }
     }
 }
-    xhr.open("GET", protocol + "//digitix08.42web.io/api/index-casete/index.php?list=" + file + nr, true);
+    xhr.open("GET", protocol + "//gabi.redtro.net/api/index-casete/index.php?list=" + file + nr, true);
     xhr.send();
 }
 
@@ -248,7 +248,7 @@ document.onclick = function(){ outliner(); }
 				<h1 id="darkH1">Index-ul melodiilor de pe casete</h1>
 		<p><span class="note">
 		<b>Last modified:  </b>
-		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->25.01.2026 11:09<!--webbot bot="TimeStamp" endspan i-checksum="26010" --></span></p>
+		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->25.01.2026 12:03<!--webbot bot="TimeStamp" endspan i-checksum="25258" --></span></p>
 		<h2>List of Files</h2>
 		<div id="tapeList">Loading...</div>
 		</td>

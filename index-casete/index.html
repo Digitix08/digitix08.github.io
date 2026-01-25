@@ -42,6 +42,8 @@ function createXHR() {
   }
 }
 
+var protocol = "http://";
+
 function loadtap(){//fn to autoexpand tape with id
     if (window.location.href.indexOf("?") > -1){
         var urlString = window.location.href
@@ -152,6 +154,7 @@ var data = parseJSON(info);
 }
         
 function loadFirstTapes(nr) {
+  protocol = window.location.protocol;
   document.getElementById('tapeList').innerHTML = "";
   var xhr = createXHR();
   if (!xhr) return;
@@ -161,7 +164,7 @@ function loadFirstTapes(nr) {
                     loadMoreTapes("tapes_", 2, nr);
                 }
             };
-            xhr.open("GET", "http://digitix08.42web.io/api/index-casete/index.php?list=tapes_1", true);
+            xhr.open("GET", protocol + "digitix08.42web.io/api/index-casete/index.php?list=tapes_1", true);
             xhr.send();
 }
 
@@ -184,7 +187,7 @@ function loadMoreTapes(file, nr, cnt){
       }
     }
 }
-    xhr.open("GET", "http://digitix08.42web.io/api/index-casete/index.php?list=" + file + nr, true);
+    xhr.open("GET", protocol + "//digitix08.42web.io/api/index-casete/index.php?list=" + file + nr, true);
     xhr.send();
 }
 

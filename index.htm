@@ -22,6 +22,26 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		document.getElementById("dark").href="/mobile/css/dark.css";
 		}
 	}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
 </script>
 <style type="text/css">
 
@@ -48,7 +68,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 </style>
 <!-- #EndEditable -->
 <style type="text/css">
-
 .container{
 	margin-left: auto;
 	margin-right: auto;
@@ -57,7 +76,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 </head>
 
 <!-- #BeginEditable "onload" -->
-<body>
+<body onload="FP_preloadImgs(/*url*/'images/buttons/meGithub_p.jpg',/*url*/'images/buttons/meGithub_p_s.jpg')">
 
 <!-- #EndEditable -->
 <table id="body" class="container">
@@ -120,8 +139,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 					to page</em></a><em>" instead</em></p>
 		<p><em>Added <a href="art%20parinti">art parinti</a> subfolder</em></p>
 		<hr /><p>
-		<a href="https://github.com/digitix08/digitix08.github.io/"><img alt="Me on github" height="40" id="img1" src="images/meGithub.jpg" style="border: 0" width="140" /></a><a href="https://github.com/digitix08/repository">
-</a>
+		<a href="https://github.com/digitix08/digitix08.github.io/">
+		<img id="meGit" height="40px" width="126px" alt="Me on github" onmousedown="FP_swapImg(1,0,/*id*/'meGit',/*url*/'images/buttons/meGithub_p_s.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'meGit',/*url*/'images/buttons/meGithub.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'meGit',/*url*/'images/buttons/meGithub_p.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'meGit',/*url*/'images/buttons/meGithub.jpg')" src="./images/buttons/meGithub.jpg" style="border: 0"></a>
 <a href="useful_links.html">useful links</a>
 </p>
 		</td>

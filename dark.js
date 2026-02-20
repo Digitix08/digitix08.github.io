@@ -1,6 +1,6 @@
 document.onreadystatechange = function (){if (document.readyState === 'complete')startChecks();}
 if (typeof console == "undefined") {
-	if (typeof external == "undefined")
+	if (typeof external.log == "undefined")
     	this.console = { log: function (msg) { /*alert(msg);*/ } };
     else this.console = { log: function (msg) { external.log(msg); } };
 }
@@ -66,7 +66,7 @@ function mobileCheck(){
 			document.getElementById("title").innerHTML = document.getElementById("darkH1").innerHTML
 			document.getElementById("darkH1").outerHTML = "";
 			}
-		document.getElementById("home").innerHTML="<img border=\"0\" id=\"img4\" src=\"http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back.gif\" style=\"height:21; width:100;\" alt=\"Back\" onmouseover=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p.gif')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back.gif')\" onmousedown=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p_s.gif')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'http://digitix08.github.io/repository/images/buttons/back_cmp_aftrnoon000_back_p.gif')\"/>";
+		document.getElementById("home").innerHTML="<img border=\"0\" id=\"img4\" src=\"/images/buttons/back_cmp_aftrnoon000_back.gif\" style=\"height:21; width:100;\" alt=\"Back\" onmouseover=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back_p.gif')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back.gif')\" onmousedown=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back_p_s.gif')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back_p.gif')\"/>"
 		}
 }
 function checkPrompt() {
@@ -77,8 +77,8 @@ function checkPrompt() {
 		document.getElementsByTagName("body")[0].appendChild(newDiv);
 		document.getElementById("prompt").innerHTML += "To use &quot;premium&quot; features such as dark theme you <strong>MUST</strong> agree to save <strong>LOCAL</strong> cookies containing the theme preference";
 		document.getElementById("prompt").innerHTML += "<br>Do you want to use cookies?";
-		document.getElementById("prompt").innerHTML += "<br><img id=\"img2\" alt=\"Yes\" fp-style=\"fp-btn: Border Bottom 2; fp-font-size: 20\" fp-title=;\"Yes\" height=\"40\" tabindex=\"0\" onkeypress=\"promptRemove(1)\" onclick=\"promptRemove(1)\" onmousedown=\"FP_swapImg(1,0,/*id*/'img2',/*url*/'https://digitix08.github.io/repository/images/buttons/button14.jpg')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img2',/*url*/'https://digitix08.github.io/repository/images/buttons/button1E.jpg')\" onmouseover=\"FP_swapImg(1,0,/*id*/'img2',/*url*/'https://digitix08.github.io/repository/images/buttons/button1F.jpg')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img2',/*url*/'https://digitix08.github.io/repository/images/buttons/button1F.jpg')\" src=\"https://digitix08.github.io/repository/images/buttons/button1E.jpg\" style=\"border: 0\" width=\"200\">";
-		document.getElementById("prompt").innerHTML += "<img id=\"img3\" alt=\"No\" fp-style=\"fp-btn: Border Bottom 3; fp-font-size: 20\" fp-title=\"No\" height=\"40\" tabindex=\"0\" onkeypress=\"promptRemove(1)\" onclick=\"promptRemove(0)\" onmousedown=\"FP_swapImg(1,0,/*id*/'img3',/*url*/'https://digitix08.github.io/repository/images/buttons/button1D.jpg')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img3',/*url*/'https://digitix08.github.io/repository/images/buttons/button1B.jpg')\" onmouseover=\"FP_swapImg(1,0,/*id*/'img3',/*url*/'https://digitix08.github.io/repository/images/buttons/button1C.jpg')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img3',/*url*/'https://digitix08.github.io/repository/images/buttons/button1C.jpg')\" src=\"https://digitix08.github.io/repository/images/buttons/button1B.jpg\" style=\"border: 0\" width=\"200\">"
+		document.getElementById("prompt").innerHTML += "<br><img id=\"img2\" alt=\"Yes\" fp-style=\"fp-btn: Border Bottom 2; fp-font-size: 20\" fp-title=;\"Yes\" height=\"40\" tabindex=\"0\" onkeypress=\"promptRemove(1)\" onclick=\"promptRemove(1)\" onmousedown=\"FP_swapImg(1,0,/*id*/'img2',/*url*/'/images/buttons/button14.jpg')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img2',/*url*/'/images/buttons/button1E.jpg')\" onmouseover=\"FP_swapImg(1,0,/*id*/'img2',/*url*/'/images/buttons/button1F.jpg')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img2',/*url*/'/images/buttons/button1F.jpg')\" src=\"/images/buttons/button1E.jpg\" style=\"border: 0\" width=\"200\">";
+		document.getElementById("prompt").innerHTML += "<img id=\"img3\" alt=\"No\" fp-style=\"fp-btn: Border Bottom 3; fp-font-size: 20\" fp-title=\"No\" height=\"40\" tabindex=\"0\" onkeypress=\"promptRemove(1)\" onclick=\"promptRemove(0)\" onmousedown=\"FP_swapImg(1,0,/*id*/'img3',/*url*/'/images/buttons/button1D.jpg')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img3',/*url*/'/images/buttons/button1B.jpg')\" onmouseover=\"FP_swapImg(1,0,/*id*/'img3',/*url*/'/images/buttons/button1C.jpg')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img3',/*url*/'/images/buttons/button1C.jpg')\" src=\"/images/buttons/button1B.jpg\" style=\"border: 0\" width=\"200\">"
 		document.getElementById("prompt").className= "prompt";
 	}
 };

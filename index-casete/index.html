@@ -43,6 +43,7 @@ function createXHR() {
 }
 
 var protocol = "http://";
+var lastnr = 0;
 
 function loadtap(){//fn to autoexpand tape with id
     if (window.location.href.indexOf("?") > -1){
@@ -103,6 +104,46 @@ function makeTFooter(){
   loadtap();
 }
 
+function albumFormatter(album){
+  var html = "";
+  if(album){
+    html += '<tr><td style="width:10px" class="content">+</td>';
+    html += '<td class="content">' + album[0].author + '</td>';
+    html += '<td class="content">' + album[0].name + '</td></tr>';
+    for(var k=1; k< album.length; k++){
+      if(album[k]){
+        var albSong = album[k];
+        html += '<tr><td style="width:10px" class="content">' + albSong.nr + '</td>';
+        html += '<td class="issuecontent">' + albSong.author + '</td>';
+        html += '<td class="issuecontent">' + albSong.title + '</td></tr>';
+      }
+    }
+  }
+  return html;
+}
+
+function commentFormatter(comments){
+  var commentzero = true;
+  var html = "";
+  if(comments){
+    var cntitle = "Comments";
+    if(comments[0].name){
+      cntitle = comments[0].name;
+      commentzero = false;
+    }
+    html += '<tr><td colspan="3" class="issuecontent">(' + lastnr + ') ' + cntitle + ':';
+    html += '<span style="font-size: 10px">';
+    if(commentzero) html += '<br/ >' + comments[0];
+    for(var k=1; k< comments.length; k++){
+      if(comments[k]){
+        html += '<br/ >' + comments[k];
+      }
+    }
+    html += "</span></td></tr>"
+  }
+  return html;
+}
+
 function tableFormatter(info){
 var data = parseJSON(info);
   var html = '';
@@ -126,24 +167,46 @@ var data = parseJSON(info);
       count++;
 	  html += '<td class="content">unknown</td></tr>'
 	  html += '<tr class="collapsed" id="' + idnum + '"><td colspan="4">';
-	  html += '<table width="97%" border="1" style="border-color:#dcdcdc" rules="cols" class="issuetable">';
+	  html += '<table width="97%" border="1" style="border-color:#dcdcdc" rules="cols" class="issuetable">'; console.log(tape.side_1);
       if (tape.side_1 != null){
         html += '<tr><td colspan="3" class="issuetitle">Side ' + tape.side_1[0].name + '</td></tr>';
         html += '<tr><td style="width:10px" class="issuehdr">#</td><td class="issuehdr">Artist</td><td class="issuehdr">Name</td></tr>'
         for(var j=1; j< tape.side_1.length; j++){
           var line = tape.side_1[j];
-          html += '<tr><td style="width:10px" class="issuecontent">' + line.nr + '</td>';
-          html += '<td class="issuecontent">' + line.author + '</td>';
-          html += '<td class="issuecontent">' + line.title + '</td></tr>';
+          if(line.album){
+            var album = line.album;
+            html += albumFormatter(album);
+          }
+          else{
+            lastnr = line.nr;
+            html += '<tr><td style="width:10px" class="issuecontent">' + line.nr + '</td>';
+            html += '<td class="issuecontent">' + line.author + '</td>';
+            html += '<td class="issuecontent">' + line.title + '</td></tr>';
+          }
+          if(line.comments){
+            var comments = line.comments; console.log(comments)
+            html += commentFormatter(comments);
+          }
         }
         if (tape.side_2 != null){
           html += '<tr><td colspan="3" class="issuetitle">Side ' + tape.side_2[0].name + '</td></tr>';
           html += '<tr><td style="width:10px" class="issuehdr">#</td><td class="issuehdr">Artist</td><td class="issuehdr">Name</td></tr>'
           for(var j=1; j< tape.side_2.length; j++){
             var line = tape.side_2[j];
-            html += '<tr><td style="width:10px" class="issuecontent">' + line.nr + '</td>';
-            html += '<td class="issuecontent">' + line.author + '</td>';
-            html += '<td class="issuecontent">' + line.title + '</td></tr>';
+            if(line.album){
+              var album = line.album;
+              html += albumFormatter(album);
+            }
+            else{
+              lastnr = line.nr;
+              html += '<tr><td style="width:10px" class="issuecontent">' + line.nr + '</td>';
+              html += '<td class="issuecontent">' + line.author + '</td>';
+              html += '<td class="issuecontent">' + line.title + '</td></tr>';
+            }
+            if(line.comments){
+              var comments = line.comments; console.log(comments)
+              html += commentFormatter(comments);
+            }
           }
         }
         html += "</table></td>"
@@ -248,7 +311,7 @@ document.onclick = function(){ outliner(); }
 				<h1 id="darkH1">Index-ul melodiilor de pe casete</h1>
 		<p><span class="note">
 		<b>Last modified:  </b>
-		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->25.01.2026 12:03<!--webbot bot="TimeStamp" endspan i-checksum="25258" --></span></p>
+		<!--webbot bot="TimeStamp" s-format="%d.%m.%Y %H:%M" s-type="EDITED" startspan -->20.02.2026 14:14<!--webbot bot="TimeStamp" endspan i-checksum="25488" --></span></p>
 		<h2>List of Files</h2>
 		<div id="tapeList">Loading...</div>
 		</td>

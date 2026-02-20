@@ -1,8 +1,8 @@
-========== Casete ==========
+========   Casete  ========
 In html nu sunt/este 1 caseta
 *deja pe site
 
-[  ] De făcut: casetă cu bee gees
+De făcut: casetă cu bee gees
 
 [77]Magna c90 ----------------------------
 Side 1
@@ -30,6 +30,7 @@ Technotronic - Get up Before The Night is Over
 Roxette - Dangerous
 ???
 
+
 [78]Agfa superferro c60 de la bunici ---------
 Side 1
 Jason Donovan - Hang on to your love
@@ -50,6 +51,7 @@ Tony Esposito - Babilon
 Robert palmer - I'll be your baby tonight
 Enigma - mea culpa
 Michael Jackson - liberanian girl
+
 
 [79]Caseta C60 bunici -------------------------
 Side A
@@ -72,6 +74,7 @@ Fresh System - You And Me (Together Again (Original Version))
 Cool Cut - Please Let Me Know (Extended Version)
 RLC - Soldiers (Radio Cut)
 
+
 [80]JVC AF1-60 bunici --------------------------------
 Side A
 Inner Circle - Sweat (A La La La La Long)
@@ -91,6 +94,7 @@ Benito & MC Hammer - Living In a World Like This
 MC Hammer - Tell me (why can't we live together)
 MC Hammer - Releasing Some Pressure
 
+
 [81]Caseta audio club bunici----------------
 Side 1 (Peter Frampton "Camel")
 Peter Frampton - I Got My Eyes On You
@@ -103,7 +107,7 @@ Peter Frampton - Just The Time Of Year
 Peter Frampton - Do You Feel Like We Do
 
 Side 2 (Bobby Womack)
-Bobby Womack - Lookin&#226;�� for a Love
+Bobby Womack - Lookin’ for a Love
 Bobby Womack - I Don't Wanna Be Hurt By Ya Love Again
 Bobby Womack - Doing It My Way
 Bobby Womack - Let It Hang Out
@@ -112,8 +116,9 @@ Bobby Womack - You're Welcome, Stop on By
 Bobby Womack - You're Messing Up a Good Thing
 Bobby Womack - Don't Let Me Down
 Bobby Womack - Copper Kettle (In the pale moonlight)
-Bobby Womack - There&#226;��s One Thing That Beats Failing
-Supertramp - Another Man&#226;��s Woman
+Bobby Womack - There’s One Thing That Beats Failing
+Supertramp - Another Man’s Woman
+
 
 [82]TDK D90 de la bunici
 Side A
@@ -145,6 +150,7 @@ Johnny Nash - Rock me Baby
 Men At Work - Down Under
 Icehouse - No Promises
 
+
 [83]BASF c120 de la bunici------------------
 Side 1
 Pink Floyd - Another Brick in the Wall part 2
@@ -158,20 +164,21 @@ Glenn Meideros - she ain't worth it
 Roxette - It must have been love
 Tina Turner - I don't wanna lose you
 
+
 [84]Caseta c90 verde de la bunici ------------
 Side 1
-Peret-Lo mato
+Peret - Lo mato
 2
-György KordaI-Fehér galamb (Paloma blanca)
-Michel Polnareff-Love me, please love me
-Carmen Sevilla-Tengo miedo torero
+György KordaI - Fehér galamb (Paloma blanca)
+Michel Polnareff - Love me, please love me
+Carmen Sevilla - Tengo miedo torero
 Kreis-Eim bett im kornfeld
 7
 8
 Necunoscut - You Set My Heart On Fire
 10
-Marianne Rosenderg-Es gehort zu mir
-Marianne Rosenderg-Lieder Der Nacht
+Marianne Rosenderg - Es gehort zu mir
+Marianne Rosenderg - Lieder Der Nacht
 14
 
 Side 2
@@ -180,12 +187,13 @@ Queen - I'm going slightly mad
 Queen - Headlong
 Queen - I can't live with you
 
+
 [97]Agfa superferro hdx -------------------
 Side 1
-+New kids on the block-step by step++++1-8
++New kids on the block - step by step++1-8
 | New kids on the block - step by step
 | New kids on the block - tonight
-| New kids on the block-call it what you want
+| New kids on the block - call it what you want
 | New kids on the block - happy birthday
 | New kids on the block - games
 | New kids on the block - where do I go from here
@@ -194,13 +202,14 @@ Side 1
 +++++++album continues on side 2
 
 Side 2
-+New kids on the block-step by step++++1-4
++New kids on the block - step by step++1-4
 | New kids on the block - let's try it again
 | New kids on the block - stay with me baby
 | New kids on the block - funny feeling
 | New kids on the block - never gonna fall in love again
 +++++++++++++++(all album songs)
 Jeanne mas - en rouge et noir
+
 
 [99]Maxell c60 ----------------------------
 Side 1
@@ -221,7 +230,8 @@ Moon - moonlight shadow
 Physical heat - dangerous
 Richenel - oasis
 
-[106]Radio 2m+ collection (înregistrat peste)---
+
+[106]Radio 2m+ collection (înregistrat peste)
 Side a
 Roxette - almost unreal
 Roxette - sleeping in my car
@@ -241,12 +251,14 @@ Kansas - dust in the wind
 Take that - back for good (radio mix)
 Kylie Minogue - Locomotion
 
+
 "Mike Oldfield =Elements=" (de la bunici)
 Side A (with label)
 
 Mike Oldfield - Heaven's Open
 Mike Oldfield - Five Miles Out
 Mike Oldfield - To France
+
 
 [132]BASF c60 cu eticheta verde -------------
 Side 1
@@ -269,6 +281,7 @@ Compact - Cantec pentru prieteni
 Thomas Andersen - The Sweet Hello, The Sad Goodbye
 Orchestral manoeuvres in the dark - Pandora's Box
 Mariah Carey - emotions
+
 
 [134]Agfa vișinie --------------------------
 Side 1
@@ -298,8 +311,10 @@ The Pinups - do it all night
 ??italiana+english?
 Yellow Magic Orchestra - nice age
 
+
 [135]Caseta Orwo --------------------------
 Side 1
+Captain Hollywood Project - Impossible (Extended Version)
 Scorpions - holiday
 Captain Hollywood Project - more and more (single version)
 Inner Circle - sweat
@@ -317,6 +332,7 @@ InnerCircle - bad boys
 7
 Lulu - independence
 
+
 [137]Universum c60 "sel teo 1" ----------------
 Side 1
 Cutting Crew - (I Just) Died in Your Arms
@@ -327,10 +343,21 @@ Van Halen - Jump
 Boston - Don't look back
 Roxette - It must have been love
 
-[139]BASF c90 cu eticheta portocalie ----------
+Side 2
+Roxette - Listen To Your Heart
+Roxette - The Look
+Roxette - Joyride
+Roxette - Fading Like A Flower (Every Time You Leave)
+Roxette - Dangerous
+Roxette - Dressed For Success (US Single Mix)
+Roxette - Spending My Time
+Roxette - Sleeping In My Car
+
+
+[139]BASF c90 cu eticheta portocalie ---------
 Side 1
 Olivia Newton John - you're the one that I want
-John Paul Young- love is in the air
+John Paul Young - love is in the air
 D.C La Rue - let them dance
 Al Green - i feel good
 A Taste Of Honey - oogie oogie boogie
@@ -366,7 +393,8 @@ Corey Hart - Sunglasses at night
 Billy idol - Eyes without a face
 Eurythmics - Here comes the rain again
 
-[140]Caseta C60 -------------&#226;��--------&#226;��
+
+[140]Caseta C60 -------------‐--------‐
 Side A
 The Outhere Brothers - Boom Boom Boon
 Livin' Joy - Dreamer
@@ -388,9 +416,10 @@ Herbert - I believe
 La Bouche - Where Do You Go
 Michael Jackson - You Are Not Alone
 
+
 [141]Caseta c60 eticheta roșie ---------------
 Side T
-McGuinness Flint - When I&#226;��m Dead and Gone
+McGuinness Flint - When I’m Dead and Gone
 Mungo Jerry - In The Summertime
 Simon & Garfunkel - Cecilia
 Tom Jones - She's a Lady
@@ -403,18 +432,19 @@ Chica Buarque - A Banda
 Frank Sinatra - The world we knew (over and over)
 
 Side 2 4
-Gilbert Bécaud -  Charlie, t&#226;��iras pas au paradis
+Gilbert Bécaud -  Charlie, t’iras pas au paradis
 Engelbert Humperdinck - Les Bicyclettes de Belsize (doar titlul în fr, melodia în english)
 Brook Benton - Will You Love Me Tomorrow
 Domenico Modugno - La lontananza
 Mukesh - Chal Akela Chal Akela
-mungo jerry - in the summertime (but in italian)
+??mungo jerry - in the summertime (but in italian)
 Adriano Celentano - Un bimbo sul leone
 Stella Greka - Gyrisse se perimeno gyrisse
 9
 the beatles - don't let me down
 
-[142]Goldstar c60 "best of..."-----------------
+
+[142]Goldstar c60 "best of..." -----------------
 Side A
 Guns & Roses - Don't Cry (Original)
 Paula Seling - Ploaie In Luna Lui Marte
@@ -433,6 +463,7 @@ Geova Eucarin - Exodus (main theme)
 Francisco Garcia - What's a Woman
 Richard Clayderman  - Für Elise
 The London Starlight Orchestra - Lilly Was Here
+
 
 [179]Caseta maxell "Audio Studio Brasov"
 Side A
@@ -465,6 +496,39 @@ Angela Dimitriou - Den Ponas Den Ipofero (Remix-Dimitris Panopoulos)
 Wael Kafouri - Magrora (Remix)
 Eleftheria Arvanitaki - Dynata (Homecoming)
 
+
+[183]BASF crom C90 "disco" --------------
+Side 1
++Chris Rea - Auberge+++++++++++++++1-9
+| Chris Rea - Auberge
+| Chris Rea - Gone Fishing
+| Chris Rea - You're Not A Number
+| Chris Rea - Heaven
+| Chris Rea - Set Me Free
+| Chris Rea - Red Shoes
+| Chris Rea - Sing a Song of Love to Me
+| Chris Rea - Every Second Counts
+| Chris Rea - Looking for the Summer
++++++++++++++++(9/11 songs)
+Scorpions - Wind Of Change
+
+Side 2
++Roxette - Joyride++++++++++++++++1-12
+| Roxette - Joyride
+| Roxette - Hotblooded
+| Roxette - Fading Like a Flower (Every Time You Leave)
+| Roxette - Knockin' on Every Door
+| Roxette - Spending My Time
+| Roxette - I remember You
+| Roxette - Like Watercolours In The Rain
+| Roxette - The Big L
+| Roxette - Soul Deep
+| Roxette - (Do You Get) Excited?
+| Roxette - Church Of Your Heart
+| Roxette - Small Talk
++++++++++++++++(12/15 songs)
+
+
 [184]BASF crom c60 "4"---------------------
 Side 1
 Whitney Houston -Didn't we almost have it all
@@ -483,7 +547,8 @@ The Other Ones - Holiday
 Pseudo Echo - Funny Town
 8
 
-[192]Sony HF60
+
+[192]Sony HF60 -------------------------------------------
 Side A
 T'Pau - Bridge of Spies (US Single Edit)
 Sinitta - Cross My Broken Heart
@@ -505,7 +570,8 @@ Fuzzbox - Pink Sunshine
 Yazz - Where Has All the Love Gone
 Stevie Nicks- Rooms On Fire
 
-[193]Phillips SQC60
+
+[193]Phillips SQC60 ‐----------‐-------------‐-----------
 Side A
 2 Unlimited - Jump for Joy
 N-Trance - Electronic Pleasure
@@ -525,7 +591,8 @@ Grace - Not Over Yet (Perfecto Edit)
 David Bowie - Hallo Spaceboy (Pet Shop Boys Remix)
 Everything But the Girl & Todd Terry - Missing (Todd Terry Club Mix)
 
-[203]Goldstar hp60 carcasa transparenta
+
+[203]Goldstar hp60 carcasa transparenta ---
 Side A
 B.G. The Prince Of Rap - Can We Get Enough
 Haddaway - life
@@ -533,15 +600,18 @@ Janet Jackson - If (Brothers In Rhythm House Mix) https://www.youtube.com/watch?
 Dr. Alban - Hard to Choose
 Culture Beat - Got to Get It (Radio edit)
 Roxette - Almost Unreal
+Real McCoy - Run Away (Club attack mix)
 
 Side B
 Culture beat - anything
-U96 - night in motion (Original Mix)
+U96 - night in motion (Original Mix)(1993)
 Masterboy - Everybody Needs Somebody (Up & Down Mix)
 D.J. Spy - Go to Your Heart (Original Mix)
 DJ BoBo - Somebody Dance With Me
+DJ BoBo - There is a Party
 
-[204]Raks ED-X60 "Blue System"
+
+[204]Raks ED-X60 "Blue System" -----------------
 Side A
 Blue System - Romeo & Juliet (Maxi-Version)
 Blue System - Crossing the River
@@ -555,6 +625,21 @@ Blue System - Wonderful World
 Side B
 Blue System - Wonderful World
 Blue System - Heartache No. 9
+Blue System - Unfinished Rhapsodie
+Blue System - Final
+Blue System - Déjà Vu
+Blue System, Dionne Warwick & Dieter Bohlen - It's All Over
+Blue System - New York-Berlin-Paris
+Blue System - Mrs. Jones
+
+
+[205]Raks ED-X60 "Sandra" -----------------------
+Side A
+Sandra - The Skin I'm In
+Sandra - Lovelight In Your Eyes
+Sandra - One More Night
+Sandra - Hiroshima
+
 
 [211]Goldstar HP60[HIGHLY OUTDATED DO NOT USE]-------------------------
 Side A
@@ -570,20 +655,20 @@ Def Dames Dope - It's ok alright
 Urban Cookie Collective - The Key,The Secret
 Ace of Base - Don't Turn Around
 
+
 [212]Basf de 90min------------------------
 Side 1
 Loredana Groza - Bună seara, iubito
-Jeane mas - Johnny Johnny
 John david - On the mountain
-4
-5
+?malibu malibu
+?reaggae music
 Beatles - Good night
 Werner Müller - Piano Concerto No. 21 In C Major, K. 467 (II. Andante)
 Jim Reeves - Roses Are Red (My Love)
 Elvis Presley - love me tender
 10
 Rick wakeman - black pearls
-+Electric Light Orchestra - Time+++++++12-18
++Electric Light Orchestra - Time+++++12-18
 | Electric Light Orchestra - prologue
 | Electric Light Orchestra - twilight
 | Electric Light Orchestra - yours truly, 2095
@@ -612,7 +697,8 @@ Monyaka - Go Deh Yaka (Club Mix)
 Lyle McGuiness Band - You're Always On My Mind
 Miquel Brown - So Many Men, So Little Time
 
-Caseta bunici tg ocna
+
+[E1]Caseta bunici tg ocna ----------------------------
 Side A
 Înregistrare bunicul
 
@@ -627,48 +713,51 @@ Royal Philharmonic Orchestra - Arthur's Theme
 Technotronic - Come On
 Captain Hollywood Project - Only with You (Dance Mix)
 
+
 [161]Caseta manele de manele ---------------
-Partea 1
+Side 1
 Adrian Copilul Minune si Costi - Of Viata mea
 Brandy - Cu tine
 3. ?????? - ???????
-Oare cum sa cred c ai plecat de langa mine Oare cum sa cred in brate la nu stiu cine
+___Oare cum sa cred c ai plecat de langa mine
+___Oare cum sa cred in brate la nu stiu cine
 4. Razboiul Stelelor - Auzi gagico stai cuminte
 Adi de la Valcea - Supararea cand imi vine
 Millenium - Sa fac lumea
 7. ????? - ??????
-Ma gandesc mereu
-Sa ma insor si eu
-Sa mi iau o nevasta
-Doar la mine acasa
-
-Dar viata asta de golan 
-Nu mi da pace
-Ca am bani prea multi
-Si n am ce i face
+___Ma gandesc mereu
+___Sa ma insor si eu
+___Sa mi iau o nevasta
+___Doar la mine acasa
+___/
+___Dar viata asta de golan 
+___Nu mi da pace
+___Ca am bani prea multi
+___Si n am ce i face
 8. Adrian Minune si Costi Ionita - E noapte si e Tarziu
 Vali Vijelie - E trist sa suferi din iubire
 
-Partea 2
+Side 2
 10. ?????? - ?????
-M am saturat 
-De atata asteptare
-M am saturat
-Si nu mai am rabdare
-N am sa te astept
-In fiecare seara
-Gelozia ma omoara
+___M am saturat 
+___De atata asteptare
+___M am saturat
+___Si nu mai am rabdare
+___N am sa te astept
+___In fiecare seara
+___Gelozia ma omoara
 11. Cristian si Petrisor - Magdalena
 12. Bairam - Mor dusmanii mei
 13. Adi de la Valcea - Pustoaica
 14. ???? - ??????
-- Am un barbat vagabont
-E golan e vagabont 
-Dar n ai ce i face
-Tot acasa se intoarce
+___Am un barbat vagabont
+___E golan e vagabont 
+___Dar n ai ce i face
+___Tot acasa se intoarce
 15. L.A. - Bate, bate inima
 16. Adrian Copilul Minune si Costi Ionita - Printesa mea
 17. Adi de la Valcea - Tu mie
+
 
 Alte shazamuri:
 Newton-You're The One That I Want
@@ -676,6 +765,13 @@ Olivia Newton John - Xanadu
 Renée & Renato - Save Your Love
 Climie Fisher - Rise to the Occasion
 The Wispers - And The Beat Goes On
+Jeane mas - Johnny Johnny
+Dolly Dots - S.T.O.P.
+Captain Jack - Iko Iko
+Alexia Vassiliou & Island - Monika
+Dschinghis Khan - Rocking Son Of Dschinghis Khan
+Julio Iglesias and Willie Nelson - To All The Girls I've Loved Before
+Jonny Hill - Rosen für Mama
 
 9 martie 2024
 Black Eyed Peas - pump it
@@ -685,3 +781,8 @@ Sugar Ray - Fly (feat. Super Cat)
 
 24 martie
 György Korda - Reptér
+
+====Reliability Report
+Shazam: 70%
+Google MusicSearch: 85%
+Other: 20-80%

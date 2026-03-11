@@ -153,6 +153,17 @@ input[type=text], input[type=date], input[type=password]{
 	COLOR: #000000;
 	FONT-WEIGHT: bold
 }
+.footer
+{
+	BACKGROUND-COLOR: #003366;
+	color:#ffffff;
+	MARGIN-bottom:-1px;
+	BORDER-TOP: #336699 3px solid;
+	bottom:0px;
+	PADDING-TOP: 10px;
+	PADDING-BOTTOM: 15px;
+	width:100%
+}
 .issuehdr
 {
 	BACKGROUND-COLOR: #E0EBF5;

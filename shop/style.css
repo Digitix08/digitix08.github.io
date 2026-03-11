@@ -57,16 +57,4 @@ input[type=text]{
 	BORDER-RIGHT: #ffffff 2px solid;
 	BORDER-TOP: #a0a0a0 2px solid;
 }
-.footer
-{
-	background-color:#CC6600;
-	color:#ffffff;
-	MARGIN-bottom:-10px;
-	border-top:#ff9933 3px solid;
-	position:static;
-	bottom:0px;
-	PADDING-TOP: 10px;
-	PADDING-BOTTOM: 15px;
-	width:100%
-}
 

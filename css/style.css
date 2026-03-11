@@ -142,6 +142,15 @@ input[type=text], input[type=date], input[type=password]{
 	PADDING-BOTTOM: 15px;
 	width:100%
 }
+.footer a:link{
+	color: #8cd9f2;
+}
+.footer a:visited{
+	color: #8cc1f2;
+}
+.footer a:hover{
+	color: #00ffff;
+}
 .issuehdr
 {
 	BACKGROUND-COLOR: #E0EBF5;

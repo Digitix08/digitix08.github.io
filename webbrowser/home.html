@@ -12,7 +12,7 @@
 <title>WebBrowserCS home</title>
 <script type="text/javascript" src="../dark.js"></script>
 <script type="text/javascript">
-var darkmode = getTheme()
+var darkmode = getTheme();
 if (darkmode == "yes"){
 	document.getElementById("dark").href="/css/dark.css";
 }
@@ -37,8 +37,9 @@ function getBrowserPrefs(){
 }
 var defaultSearch = "www.google.com/search?q=";
 function getSearchEngines(){
-  var DMXSearchEngines = parseJSON(external.GetSearchEngines(window.location.href)).SearchEngines;
-  //document.getElementById("DMXDiv").innerHTML = external.getSearchEngines();
+  var DMXJson = external.GetSearchEngines(window.location.href);//'{"SearchEngines": ["http://www.google.com/search?q=", "http://www.bing.com/search?q=", "http://wikipedia.org/w/index.php?search=", "https://html.duckduckgo.com/html/?q="] }';
+  var DMXSearchEngines = parseJSON(DMXJson).SearchEngines;
+  //document.getElementById("DMXDiv").innerHTML = DMXJson;
   var html = '';
   var i = 0
   defaultSearch = DMXSearchEngines[0];
@@ -69,8 +70,11 @@ function checkVersion() {
         }
     };
 
-    xhr.open("GET", "https://api.github.com/repos/digitix08/webbrowsercs/releases", true);
-    xhr.send();
+    try{
+	  xhr.open("GET", "https://api.github.com/repos/digitix08/webbrowsercs/releases", true);
+      xhr.send();
+	}
+	catch(e){}
 }
 
 function getAvailTabs(){
@@ -121,7 +125,6 @@ function GoToPageNewTab(pageUrl, NewPageMode){
       textToLoad = "external.NewUserTab('" + window.location.href + "', '" + NewPageMode.substring(NewPageMode.indexOf("_;_") + 3) + "', '" + pageUrl + "')";
     }
     else textToLoad = "external." + NewPageMode + "('" + window.location.href + "', '" + pageUrl + "')";
-    alert(textToLoad);
     eval(textToLoad);
   }
   else window.open(pageUrl, '_blank')

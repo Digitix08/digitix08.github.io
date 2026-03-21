@@ -18,7 +18,9 @@ function parseJSON(str) {
 };
 //for xmlhttp
 function createXHR() {
-  if (window.XMLHttpRequest) {
+  if (window.XDomainRequest) {
+	return new window.XDomainRequest();
+  } else if (window.XMLHttpRequest) {
     return new XMLHttpRequest();
   } else {
     try {

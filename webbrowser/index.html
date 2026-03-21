@@ -27,7 +27,6 @@ function loadRecentReleases() {
     var xhr = createXHR();
     if (!xhr) return;
 
-    document.getElementById('recent-downloads').innerHTML = "Loading...<br>" + document.getElementById('recent-downloads').innerHTML;
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var data = parseJSON(xhr.responseText);
@@ -67,8 +66,12 @@ function loadRecentReleases() {
         }
     };
 
-    xhr.open("GET", "https://api.github.com/repos/digitix08/webbrowsercs/releases", true);
-    xhr.send();
+    try{
+		xhr.open("GET", "https://api.github.com/repos/digitix08/webbrowsercs/releases", true);
+		xhr.send();
+		document.getElementById('recent-downloads').innerHTML = "Loading...<br>" + document.getElementById('recent-downloads').innerHTML;
+	}
+	catch(e){}
 }
 
 window.onload = function(){ loadRecentReleases(); }

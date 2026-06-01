@@ -1,6 +1,5 @@
 Casete partea 2
 
-
 [256]RAKS DX60 "40" -----------------------------------
 Side A
 Beat System - Fresh (Radio Mix)
@@ -23,6 +22,40 @@ Herbie - The Skank
 Clock - Holding On 4 U (Visa Radio Mix)
 Roberto Rossini - LÌtaliano (Radio Edit)
 
+[260]Agfa LNS60 portocalie ------------------------
+Side 1
+Orchester Heinz Gietz - Musik ist Trumpf (opening)
+???German
+Genghis Khan - Handschi Halef Omar
+A La Carte - Doctor, Doctor (Help Me Please)
+Goombay Dance Band - Sun of Jamaica
+A La Carte - When the Boys Come Home
+Goombay Dance Band - Eldorado
+Genghis Khan - Moskau
+???Instrumental(lady, lady)
+___the only two words spoken are the word "lady" (or "maybe"), said twice near the end of this like 7 minute track
+???instrumental
+?Leo Rojas - Winnetou
+???Bonanza
+???german
+???german
+???german
+
+Side 2
+???german
+???german (der abend nacht)
+???german
+???german
+???gernam (von hause sprecht dir um...)
+???geman (der schonste stunden)
+Udo Juergens - Alles im Griff (Auf dem sinkender Schiff)
+Udo Juergens - Paris, einfach so nur zum
+Udo Juergens - Ich schrieb nie ein Lied für Karin
+Udo Juergens - Medie: Ich weiss was ich will
+Udo Juergens - Merci Chérie
+Udo Juergens - Gaby wartet im Park
+???german
+???german (ein rock and roll)
 
 *[262]Agfa c90 galbena -------------------------------
 Side A
@@ -49,6 +82,28 @@ Kool De Tah - Too Young For Promises
 Sarah - Tokyo Time
 Patty Ryan - (You're) My Love, (You're) My Life
 
+*[263]Agfa superferro c90+6 -----------------------
+Side 1
+Champaign - How 'Bout Us
+Smokey Robinson - Being With You
+Marvin Gaye - Praise
+Lakeside - Fantastic Voyage
+Patrice Rushen - Look Up
+Funkadelic - Connections and Disconnections
+Con Funk Shun - Play Widit
+Earth, Wind & Fire - Win or Lose
+The Whispers - Girl I Need You
+The Gap Band - Nothin Comes To Sleepers
+Tom Browne - Midnight Interlude
+The Police - Don't Stand So Close to Me
+
+Side 2
+Con Funk Shun - Too Tight
+Yarbrough & Peoples - Don't Stop The Music
+Earth Wind & Fire - And Love Goes On
+Fantasy - You're Too Late
+The Gap Band - Burn Rubber On Me (Why You Wanna Hurt Me)
+Modern Folk Üçlüsü - Hoşgeldin Dünyama
 
 *[269]Basf chromdioxid c90 () --------------------
 Side 1
@@ -64,7 +119,7 @@ Moti Special - Cold Days, Hot Nights
 Bobby Vee - Devil or Angel
 Pat Boone - April Love
 19 ???Instrumental remix
-__Radio operator said
+___Radio operator said:
 ___1laura brainigam-self control
 ___2Nik Kershaw - I Won't Let the Sun Go Down on Me
 ___3tony esposito - kalimba de luna
@@ -84,7 +139,6 @@ Cat Stevens - Morning Has Broken
 Air Supply - Making Love Out Of Nothing At All (Live)
 Fats Domino - Blue Monday
 Elton John - Blue Eyes
-
 
 [270]BASF Sound I C60 -------------------------------
 Side A
@@ -106,7 +160,6 @@ Ráfaga - Agüita
 Diego Moreno - Ritmo loco
 Los Sultanes - Decile Que Lo Quiero
 Hi-Fi - Арабика
-
 
 *[273]Sony C90 eticheta verde --------------------
 Side A
@@ -140,7 +193,6 @@ C. C. Catch - I Can Lose My Heart Tonight (Maxi Version)
 BZN - Waltzing Maria
 Neil Smith - Help Me Trough the Summer
 
-
 [276]Tdk d60 "5" ------------------------------------------
 Side A
 Kaoma - Lambada
@@ -159,7 +211,6 @@ BZN - If I Had Only A Chance
 Elton John - Sacrifice
 New kids on the block - If You Go Away
 Peter Gabriel - Red Rain
-
 
 *[277]Tdk d60 "7" -----------------------------------------
 Side a
@@ -181,7 +232,6 @@ Tears for fears - Woman in Chains (feat.
 Oleta Adams)
 Wet Wet Wet - Sweet surrender
 The mission - Butterfly On A Wheel
-
 
 [279]TDK D90 ---------------------------------------------
 Side A
@@ -212,7 +262,6 @@ Splash - Set the groove on fire (https://www.youtube.com/watch?v=ogdYd5ctXOY)
 Nomad - Just a Groove
 Erasure - Chorus
 
-
 [280]TDK D90 bumtaiala meh ---------------------
 Side A
 U96 - Love Religion
@@ -242,31 +291,6 @@ Scotty - Milkyway of Love [https://www.youtube.com/watch?v=CZzTfi_U62Y ]
 Real McCoy - Another Night
 ?spaniola
 
-
-*Agfa superferro c90+6 -----------------------------
-Side 1
-Champaign - How 'Bout Us
-Smokey Robinson - Being With You
-Marvin Gaye - Praise
-Lakeside - Fantastic Voyage
-Patrice Rushen - Look Up
-Funkadelic - Connections and Disconnections
-Con Funk Shun - Play Widit
-Earth, Wind & Fire - Win or Lose
-The Whispers - Girl I Need You
-The Gap Band - Nothin Comes To Sleepers
-Tom Browne - Midnight Interlude
-The Police - Don't Stand So Close to Me
-
-Side 2
-Con Funk Shun - Too Tight
-Yarbrough & Peoples - Don't Stop The Music
-Earth Wind & Fire - And Love Goes On
-Fantasy - You're Too Late
-The Gap Band - Burn Rubber On Me (Why You Wanna Hurt Me)
-Modern Folk Üçlüsü - Hoşgeldin Dünyama
-
-
 *[289]Sony chf 60 Michael jackson -------------
 Side 1
 Michael Jackson - Jam
@@ -284,7 +308,6 @@ Michael Jackson - Black or white
 Michael Jackson - Who is it
 Michael Jackson - Give it to Me
 Michael Jackson - Will You be there
-
 
 *[290]Sony chf 60 "36" ---------------------------------
 Side 1
@@ -308,7 +331,6 @@ Dschinghis Khan - Puszta
 Dschinghis Khan - Der Verräter
 Dschinghis Khan - Moskau
 
-
 [285]Philips C60 ------------------------------------------
 Side 1
 Chris Roberts - Lass meine Hand nicht los
@@ -325,7 +347,6 @@ Tina Charles - Love Me Like A Lover
 Neil Diamond - If You Know What I Mean
 Neil Diamond - Street Life
 Belle Epoque - Black Is Black
-
 
 *[294]TDK D60 -------------------------------------------
 Side A
@@ -346,9 +367,105 @@ Real McCoy - Love & Devotion
 Twenty 4 Seven - Keep On Tryin'
 Pato Banton & Ranking Roger - Bubblin' Hot
 
+[303]BASF LH60 ------------------------------------------
+Side 1
+?instrumental outro
++Adriano Celentano - Live in Wien+++++++2-6+++
+| Adriano Celentano - Don’t Play That Song (You Lied)
+| Adriano Celentano - Amore, no!
+| Adriano Celentano - Ti Avrò
+| Adriano Celentano - Kiss Me Goodbye (live)
+| Adriano Celentano - Rip It Up (live)
++++++++++++++++(5 songs)
 
-[311]Philips Ulta Chrome C60 --------------------
-Side A not done yet
+Side 2
+Little Richard - Baby Face
+Conway Twitty - Such a Night
+Buddy Holly - Peggy Sue
+Lloyd Price - Lawdy Miss Clawdy
+Elvis Presley - Hound Dog
+Marty Wilde - Bring Back Rock n Roll
+Pat Boone - Love Letters in the Sand
+The Everly Brothers - Cathy’s Clown
+Eddie Cochran - Skinny Jim
+Johnny Burnette - Settin' The Woods On Fire
+Chuck Berry - She Once Was Mine
+The Beatles - Twist & Shout
+The Beatles - She's a Woman
+The Beatles - Dizzy Miss Lizzy
+
+[306]BASD Chromdioxid C90 ----------------------
+Side 1 (Hitparade 1982)
+??instrumental
+Spider Murply Gang - Wo bist du
+Nickerbocker - Zruck zu dir
+Steve Miller Band - Abracadabra
+Paul McCartney - Ebony and Ivory
+Christian Franke - Ich wünsche dir die Hölle auf Erden
+Falco - Der Kommissar
+Relax - Weil i di mog
+Trio - Da Da Da (Ich lieb du nicht du liebst mich nicht)
+Andy Borg - Adios Amor
+Orchestral Manoeuvres in the Dark - Maid of Orleans (Demo)
+F.R. David - Words
+Nicole - Ein bißchen Frieden
+Kool & The Gang - Let's Go Dancing (Ooh La La La)
+
+Side 2 (Wiener Philarmoniker Neujahr 83)
+Classical music
+
+[308]BASF CR-E II 90 min ----------------------------
+Side 1
+The Beach Boys - Surfin' U.S.A.
+Nick Lowe - 7 Nights to Rock
+Bill Haley - Shake, Rattle And Roll
+Johnny & The Hurricanes - Beatnik Fly
+Johnny Burnette - Rock Billy Boogie
+Chubby Checker - Let's Twist Again
+Elvis Presley - She's Not You
+Elvis Presley - Got My Mojo Working
+Elvis Presley - Are You Lonesome Tonight?
+Billy Swan - Don't Be Cruel
+Shakin Stevens - The Shape I'm In
+Marty Wilde - Endless sleep
+Suzi Quatro - Can the Can
+Slade - Coz I Luv You
+Three Dog Night - Never Been To Spain
+Scott English - Mandy (Brandy)
+?ein pinguin in unser kühlschrank
+
+Side 2
+?ein pinguin in unser kühlschrank
+Jerry Lee Lewis - Breathless
+Jackie Lee Cochran - Mama Don't You Think I Know
+Johnny & The Hurricanes - Rocking Goose
+Fats Domino - I’m Gonna Be a Wheel Someday
+Wanda Jackson - Honey Don't
+Elvis Presley - I Need Your Love Tonight
+Elvis Presley - Lonesome Cowboy
+Elvis Presley - Ready Teddy
+Elvis Presley - True Love
+?instrumental
+?vie gehts gut (yarri-hop)
+Johnnie Alan - Promised Land
+Ronnie Self - Big Fool
+Ricky Nelson - Lonesome Town
+Hank Mizell - Jungle Rock
+The Beach Boys - Surfin' U.S.A.
+
+Side 1
+
+[311]Philips Ultra Chrome C60 --------------------
+Side A
+Chubby Checker - Let's Twist Again
+?great balls of fire
+Jerry Lee Lewis - Be Bop A Lula
+Elvis Presley - Treat Me Nice
+Peter Kraus - Kitty Cat
+?instrumental
+Shakin' Stevens - The Bop Won't Stop 
+Ace Cats - Heut Nacht
+?german
 Spandau Ballet - To Cut A Long Story Short
 Yazoo - Only You
 Kim Wilde - Love Blonde
@@ -358,19 +475,22 @@ Depeche Mode - Everything Counts
 Erste Allgemeine Verunsicherung - Alpenrap
 Agnetha Fältskog - Wrap Your Arms Around Me
 Robert Palmer - You can have it (take my heart)
-
+Hansi - Kalt duschen
+Shakin' Stevens - It's Late
+Joe Cocker - Threw It Away (1983)
+Diana Ross - Pieces of Ice (7" remix)
+Ina Deter - Ob blond, ob braun, ob henna
 
 [312]Universum Chromdioxid c90
 Side 1
 Cliff Richard - The only way Out
 
-
 [323]Goldstar HP60 "Dance Top" -----------------
 Side A
-Blue System - Call me dr.love (a new dimension)
+Blue System - Call me dr. love (a new dimension)
 Blue System - Big Yellow Taxi
 Mariah Carey - Never Forget You
-Freddie Mercury - Living on my Own (?unknown remix)
+Freddie Mercury - Living on my Own (Julian Raymond remix)
 Billy McLean - It keeps Raining
 +Blue System - Backstreet Dreams++++++
 +6-12
@@ -380,7 +500,8 @@ Billy McLean - It keeps Raining
 | Blue System - Backstreet Heaven
 | Blue System - Ballerina Girl
 | Blue System - Don't you want My foolish heart
-++++++++++++++(6/11 songs, scrambled)
+| Blue System - Talk to Me
+++++++++++++++(7/11 songs, scrambled)
 
 Side B
 Meat Loaf - I'd Do Anything for Love (But I Won't Do That)
@@ -392,3 +513,4 @@ U96 - night in motion (Original Mix)
 Masterboy - Everybody Needs Somebody (Up & Down Mix)
 Blue System - Magic Symphony
 Blue System - Love Me On The Rocks
+Blue System - Operator

@@ -37,13 +37,10 @@ function FP_getObjectByID(id,o) {//v1.0
  for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
  return null;
 }
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
 </script>
 <style type="text/css">
+
+
 
 
 
@@ -68,6 +65,7 @@ function FP_preloadImgs() {//v1.0
 </style>
 <!-- #EndEditable -->
 <style type="text/css">
+
 .container{
 	margin-left: auto;
 	margin-right: auto;
@@ -75,10 +73,7 @@ function FP_preloadImgs() {//v1.0
 </style>
 </head>
 
-<!-- #BeginEditable "onload" -->
 <body onload="FP_preloadImgs(/*url*/'images/buttons/meGithub_p.jpg',/*url*/'images/buttons/meGithub_p_s.jpg')">
-
-<!-- #EndEditable -->
 <table id="body" class="container">
 	<tr>
 		<td style="height: 46px" colspan="2">
@@ -133,11 +128,22 @@ function FP_preloadImgs() {//v1.0
 						sticks</a> that I found </li>
 						<li><a href="MINECRAFT.htm" >The details for some 
 						minecaft servers</a></li>
+						<li><a href="blog/">IG Blog</a> page (full of a total of 
+						1 blog!)</li>
+						<li><a href="games/">Games!</a> Old or crappy games, but 
+						still, games!</li>
+						<li><a href="shop/">InterShop</a>. A shop page that is 
+						more of a shitpost than a shop</li>
+						<li>The <a href="index-casete">index of melodies</a> on 
+						tape. IDK how well it actually works, but still</li>
 					</ul>
+					<p>If your browser is too crappy, maybe try
+					<a href="basic_view/">Basic View</a>. Tested working on 
+					netscape 2!</p>
 					<p><em>"</em><a href="index-old.htm"><em>Search</em></a><em>" 
 					does not work. Use "</em><a href="jump_to_page.html"><em>jump 
 					to page</em></a><em>" instead</em></p>
-		<p><em>Added <a href="art%20parinti">art parinti</a> subfolder</em></p>
+		<p><em>Added <a href="art%20parinti/">Articole parinti</a> subfolder</em></p>
 		<hr /><p>
 		<a href="https://github.com/digitix08/digitix08.github.io/">
 		<img id="meGit" height="40px" width="126px" alt="Me on github" onmousedown="FP_swapImg(1,0,/*id*/'meGit',/*url*/'images/buttons/meGithub_p_s.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'meGit',/*url*/'images/buttons/meGithub.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'meGit',/*url*/'images/buttons/meGithub_p.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'meGit',/*url*/'images/buttons/meGithub.jpg')" src="./images/buttons/meGithub.jpg" style="border: 0"></a>

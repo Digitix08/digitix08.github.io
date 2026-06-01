@@ -37,13 +37,10 @@ function FP_getObjectByID(id,o) {//v1.0
  for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
  return null;
 }
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
 </script>
 <style type="text/css">
+
+
 
 
 
@@ -69,6 +66,7 @@ function FP_preloadImgs() {//v1.0
 </style>
 <!-- #EndEditable -->
 <style type="text/css">
+
 .container{
 	margin-left: auto;
 	margin-right: auto;
@@ -76,10 +74,7 @@ function FP_preloadImgs() {//v1.0
 </style>
 </head>
 
-<!-- #BeginEditable "onload" -->
 <body onload="FP_preloadImgs(/*url*/'images/buttons/meGithub_p.jpg',/*url*/'images/buttons/meGithub_p_s.jpg')">
-
-<!-- #EndEditable -->
 <table id="body" class="container">
 	<tr>
 		<td style="height: 46px" colspan="2">

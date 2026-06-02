@@ -131,7 +131,7 @@ function tabCheck(){
 function startChecks(){
 	console.log("page start code, width is " + window.innerWidth);
 	mobileCheck();
-	checkPrompt();
+	//checkPrompt();
 	//tabCheck();
 }
 function setCookie(cname, cvalue, exdays){

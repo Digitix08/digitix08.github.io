@@ -1,6 +1,6 @@
 document.onreadystatechange = function (){if (document.readyState === 'complete')startChecks();}
 if (typeof console == "undefined") {
-	if (typeof external.log == "undefined")
+	if (typeof window.external == "undefined" || typeof external.log == "undefined")
     	this.console = { log: function (msg) { /*alert(msg);*/ } };
     else this.console = { log: function (msg) { external.log(msg); } };
 }
@@ -38,10 +38,15 @@ function checkBody() {
 	if(document.body) {console.log("correct");startChecks();}
 	else {console.log("no");setTimeout(checkPrompt(), 3000);}
 };
+//frontpage functions
 function FP_swapImg() {//v1.0
  var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
  n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
  elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
 }
 function FP_getObjectByID(id,o) {//v1.0
  var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
@@ -52,7 +57,8 @@ function FP_getObjectByID(id,o) {//v1.0
  for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
  return null;
 }
-function changeHomedir(){
+//other fns
+function changeHomedir(){//for yellow back btn
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
 	if(typeof document.getElementById("toChange") != "null"){
 		bc1 = document.getElementById("home").href
@@ -62,7 +68,7 @@ function changeHomedir(){
 		document.getElementById("toChange").className = "menu"
 	}
 }
-function mobileCheck(){
+function mobileCheck(){//for big title [mobile]
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
 		if(document.getElementById("darkH1")!=null){
 			document.getElementById("title").innerHTML = document.getElementById("darkH1").innerHTML
@@ -71,7 +77,7 @@ function mobileCheck(){
 		document.getElementById("home").innerHTML="<img border=\"0\" id=\"img4\" src=\"/images/buttons/back_cmp_aftrnoon000_back.gif\" style=\"height:21; width:100;\" alt=\"Back\" onmouseover=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back_p.gif')\" onmouseout=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back.gif')\" onmousedown=\"FP_swapImg(1,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back_p_s.gif')\" onmouseup=\"FP_swapImg(0,0,/*id*/'img4',/*url*/'/images/buttons/back_cmp_aftrnoon000_back_p.gif')\"/>"
 		}
 }
-function checkPrompt() {
+function checkPrompt() {//disabled
 	var prompt = getCookie("prompt");
 	if(prompt != "accept"){
 		var newDiv = document.createElement("div");

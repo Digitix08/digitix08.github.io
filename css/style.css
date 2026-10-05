@@ -58,6 +58,15 @@ input[type=text], input[type=date], input[type=password]{
 	BORDER-RIGHT: #f0f0f0  2px solid;
 	BORDER-TOP: #a0a0a0 2px solid;
 }
+.gallery-title{
+	display: none;
+}
+.img-caption{
+	display: inline-block;
+	/* for old browsers*/
+	*display: inline;
+	zoom: 1;
+}
 /*panel for wbcs page*/
 .panel{
 	BACKGROUND-COLOR:#e2e2e2;

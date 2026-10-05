@@ -35,8 +35,16 @@ P
 	width: 100%
 }
 
-a.menucurrent{
+.img-caption, .gallery.mobile-show{
+	display:block;
+}
+
+a.menucurrent, .gallery{
 	display:none;
+}
+.gallery-title{
+	padding: 5px;
+	border: 1px #555555 solid;
 }
 .ctrltable
 {
